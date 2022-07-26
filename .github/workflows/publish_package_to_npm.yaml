@@ -1,0 +1,20 @@
+name: publish to npm
+on:
+    release:
+        types: [released]
+
+jobs:
+    ci:
+        uses: ./.github/workflows/ci.yaml
+
+    publish:
+        needs: [ci]
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ./.github/actions/prepare_ci
+            - run: npm run build
+            - run: npm run publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

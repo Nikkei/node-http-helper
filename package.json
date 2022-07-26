@@ -16,11 +16,12 @@
         }
     },
     "scripts": {
+        "clean": "rm -rf __dist/",
         "build": "tsc",
         "typecheck": "tsc --noEmit",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": ""
     },
     "repository": {
         "type": "git",
