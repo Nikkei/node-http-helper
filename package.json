@@ -1,6 +1,20 @@
 {
     "name": "@nikkei/http-helper",
     "version": "0.0.0",
+    "type": "module",
+    "files": [
+        "__dist/",
+        "LICENSE",
+        "package.json",
+        "README.md"
+    ],
+    "typings": "./__dist/mod.d.ts",
+    "exports": {
+        ".": {
+            "types": "./__dist/mod.d.ts",
+            "default": "./__dist/mod.js"
+        }
+    },
     "scripts": {
         "build": "tsc",
         "typecheck": "tsc --noEmit",
