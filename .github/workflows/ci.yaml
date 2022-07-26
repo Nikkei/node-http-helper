@@ -1,0 +1,28 @@
+name: CI
+
+on:
+    workflow_call:
+    pull_request:
+
+# see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-only-cancel-in-progress-jobs-or-runs-for-the-current-workflow
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+# https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
+# https://docs.github.com/en/actions/learn-github-actions/contexts
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ./.github/actions/prepare_ci
+            - run: npm run build
+            - run: npm test
+
+    check_format:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ./.github/actions/prepare_ci
+            - run: npm run format:check
