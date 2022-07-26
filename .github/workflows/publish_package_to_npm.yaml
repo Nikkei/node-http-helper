@@ -15,6 +15,7 @@ jobs:
             - uses: actions/checkout@v3
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
-            - run: npm run publish
+            - run: npm publish --access=restricted
+              shell: bash
               env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
