@@ -17,6 +17,10 @@
         "./auth": {
             "types": "./__dist/auth/mod.d.ts",
             "default": "./__dist/auth/mod.js"
+        },
+        "./csp": {
+            "types": "./__dist/csp/mod.d.ts",
+            "default": "./__dist/csp/mod.js"
         }
     },
     "scripts": {
