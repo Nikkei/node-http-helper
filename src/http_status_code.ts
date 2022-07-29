@@ -167,3 +167,36 @@ export const UNPROCESSABLE_CONTENT_422 = 422;
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/426
  */
 export const UPGRADE_REQUIRED_426 = 426;
+
+//////// https://www.rfc-editor.org/rfc/rfc9110.html#name-server-error-5xx
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-500-internal-server-error
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/500
+ */
+export const INTERNAL_SERVER_ERROR_500 = 500;
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-501-not-implemented
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/501
+ */
+export const NOT_IMPLEMENTED_501 = 501;
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-502-bad-gateway
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/502
+ */
+export const BAD_GATEWAY_502 = 502;
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-503-service-unavailable
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/503
+ */
+export const SERVICE_UNAVAILABLE_503 = 503;
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-504-gateway-timeout
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/504
+ */
+export const GATEWAY_TIMEOUT_504 = 504;
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-505-http-version-not-suppor
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/505
+ */
+export const HTTP_VERSION_NOT_SUPPORTED_505 = 505;
