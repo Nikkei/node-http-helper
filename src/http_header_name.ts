@@ -4,6 +4,17 @@
  */
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-authentication-info
+ */
+export const AUTHENTICATION_INFO = 'authentication-info';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-authorization
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
+ */
+export const AUTHORIZATION = 'authorization';
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Age
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-age
  */
@@ -45,6 +56,23 @@ export const COOKIE = 'cookie';
 export const EXPIRES = 'expires';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-proxy-authenticate
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authenticate
+ */
+export const PROXY_AUTHENTICATE = 'proxy-authenticate';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-proxy-authentication-info
+ */
+export const PROXY_AUTHENTICATION_INFO = 'proxy-authentication-info';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-proxy-authorization
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authorization
+ */
+export const PROXY_AUTHORIZATION = 'proxy-authorization';
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Set-Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
@@ -68,6 +96,12 @@ export const SURROGATE_KEY = 'surrogate-key';
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#field.vary
  */
 export const VARY = 'vary';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-www-authenticate
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/WWW-Authenticate
+ */
+export const WWW_AUTHENTICATE = 'www-authenticate';
 
 /**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
