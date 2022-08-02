@@ -13,6 +13,10 @@
         ".": {
             "types": "./__dist/mod.d.ts",
             "default": "./__dist/mod.js"
+        },
+        "./auth": {
+            "types": "./__dist/auth/mod.d.ts",
+            "default": "./__dist/auth/mod.js"
         }
     },
     "scripts": {
