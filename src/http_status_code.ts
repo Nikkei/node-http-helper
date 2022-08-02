@@ -5,6 +5,19 @@
  *      - https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
  */
 
+//////// https://www.rfc-editor.org/rfc/rfc9110.html#name-informational-1xx
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-100-continue
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/100
+ */
+export const CONTINUE_100 = 100;
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-101-switching-protocols
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/101
+ */
+export const SWITCHING_PROTOCOLS_101 = 101;
+
 //////// https://www.rfc-editor.org/rfc/rfc9110.html#name-successful-2xx
 
 /**
