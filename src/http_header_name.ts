@@ -4,6 +4,30 @@
  */
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-accept
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept
+ */
+export const ACCEPT = 'accept';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-accept-charset
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Charset
+ */
+export const ACCEPT_CHARSET = 'accept-charset';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-accept-encoding
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Encoding
+ */
+export const ACCEPT_ENCODING = 'accept-encoding';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-accept-language
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language
+ */
+export const ACCEPT_LANGUAGE = 'accept-language';
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Age
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-age
  */
