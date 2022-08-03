@@ -57,6 +57,30 @@ export const AUTHORIZATION = 'authorization';
 export const CACHE_CONTROL = 'cache-control';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-encoding
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
+ */
+export const CONTENT_ENCODING = 'content-encoding';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-language
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language
+ */
+export const CONTENT_LANGUAGE = 'content-language';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-length
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Length
+ */
+export const CONTENT_LENGTH = 'content-length';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-location
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Location
+ */
+export const CONTENT_LOCATION = 'content-location';
+
+/**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
  *  - https://w3c.github.io/webappsec-csp/#csp-header
  */
@@ -80,6 +104,12 @@ export const CONTENT_TYPE = 'content-type';
 export const COOKIE = 'cookie';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-etag
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
+ */
+export const ETag = 'etag';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-expect
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect
  */
@@ -96,6 +126,12 @@ export const EXPIRES = 'expires';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/From
  */
 export const FROM = 'from';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-last-modified
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified
+ */
+export const LAST_MODIFIED = 'last-modified';
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-location
