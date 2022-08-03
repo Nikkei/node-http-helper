@@ -139,6 +139,12 @@ export const SEC_FETCH_USER = 'sec-fetch-user';
 export const SERVER = 'server';
 
 /**
+ *  - https://w3c.github.io/server-timing/#the-server-timing-header-field
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server-Timing
+ */
+export const SERVER_TIMING = 'server-timing';
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Set-Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
