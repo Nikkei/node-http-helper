@@ -104,6 +104,12 @@ export const FROM = 'from';
 export const LOCATION = 'location';
 
 /**
+ *  - https://fetch.spec.whatwg.org/#origin-header
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin
+ */
+export const ORIGIN = 'origin';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-proxy-authenticate
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authenticate
  */
