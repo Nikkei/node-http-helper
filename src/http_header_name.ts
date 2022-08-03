@@ -28,6 +28,54 @@ export const ACCEPT_ENCODING = 'accept-encoding';
 export const ACCEPT_LANGUAGE = 'accept-language';
 
 /**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-allow-credentials
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
+ */
+export const ACCESS_CONTROL_ALLOW_CREDENTIALS = 'access-control-allow-credentials';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-allow-headers
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Headers
+ */
+export const ACCESS_CONTROL_ALLOW_HEADERS = 'access-control-allow-headers';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-allow-methods
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Methods
+ */
+export const ACCESS_CONTROL_ALLOW_METHODS = 'access-control-allow-methods';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-allow-origin
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Origin
+ */
+export const ACCESS_CONTROL_ALLOW_ORIGIN = 'access-control-allow-origin';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-expose-headers
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Expose-Headers
+ */
+export const ACCESS_CONTROL_EXPOSE_HEADERS = 'access-control-expose-headers';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-max-age
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Max-Age
+ */
+export const ACCESS_CONTROL_MAX_AGE = 'access-control-max-age';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-request-headers
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Headers
+ */
+export const ACCESS_CONTROL_REQUEST_HEADERS = 'access-control-request-headers';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#http-access-control-request-method
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Request-Method
+ */
+export const ACCESS_CONTROL_REQUEST_METHOD = 'access-control-request-method';
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Age
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-age
  */
