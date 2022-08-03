@@ -5,16 +5,8 @@ on:
         branches:
             - 'main'
 
-# see https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#concurrency
-concurrency:
-    # We would like to run this workflow for all commits in the target branch.
-    # But we need to limit the workflow concurrency to ensure a deployment order as FIFO.
-    #
-    # If we use `${{ github.workflow }}-${{ github.ref }}` and the invoked workflow for our `ci` job also has same group id,
-    # this workflow will be cancelled by the invoked workflow's `concurrency` setting.
-    # To avoid this problem, we use uuid v4 as a key to mark this workflow's uniqueness.
-    group: '4a3c8373-053a-43da-b069-1465cdb38aca'
+# We don't limit this workflow concurrency because there are no order-sensitive workflow.
 
 jobs:
     ci:
-        uses: ./.github/workflows/ci.yaml
+        uses: ./.github/workflows/_ci.yaml
