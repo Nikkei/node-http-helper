@@ -73,6 +73,31 @@ export const PROXY_AUTHENTICATION_INFO = 'proxy-authentication-info';
 export const PROXY_AUTHORIZATION = 'proxy-authorization';
 
 /**
+ *  - https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
+ */
+export const SEC_FETCH_DEST = 'sec-fetch-dest';
+
+/**
+ *  - https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-mode
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Mode
+ */
+export const SEC_FETCH_MODE = 'sec-fetch-mode';
+
+/**
+ *  - https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-site
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Site
+ */
+export const SEC_FETCH_SITE = 'sec-fetch-site';
+
+/**
+ *  - https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-user
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-User
+ */
+export const SEC_FETCH_USER = 'sec-fetch-user';
+
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Set-Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
