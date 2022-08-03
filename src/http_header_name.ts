@@ -21,6 +21,12 @@ export const AUTHORIZATION = 'authorization';
 export const AGE = 'age';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-allow
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Allow
+ */
+export const ALLOW = 'allow';
+
+/**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-cache-control
  */
@@ -50,10 +56,28 @@ export const CONTENT_TYPE = 'content-type';
 export const COOKIE = 'cookie';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-expect
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expect
+ */
+export const EXPECT = 'expect';
+
+/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Expires
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-expires
  */
 export const EXPIRES = 'expires';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-from
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/From
+ */
+export const FROM = 'from';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-location
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location
+ */
+export const LOCATION = 'location';
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-proxy-authenticate
@@ -71,6 +95,18 @@ export const PROXY_AUTHENTICATION_INFO = 'proxy-authentication-info';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authorization
  */
 export const PROXY_AUTHORIZATION = 'proxy-authorization';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-referer
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer
+ */
+export const REFERER = 'referer';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-retry-after
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After
+ */
+export const RETRY_AFTER = 'retry-after';
 
 /**
  *  - https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest
@@ -96,6 +132,11 @@ export const SEC_FETCH_SITE = 'sec-fetch-site';
  */
 export const SEC_FETCH_USER = 'sec-fetch-user';
 
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-server
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Server
+ */
+export const SERVER = 'server';
 
 /**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Set-Cookie
@@ -115,6 +156,18 @@ export const SURROGATE_CONTROL = 'surrogate-control';
  *  - https://developer.fastly.com/reference/http/http-headers/Surrogate-Key/
  */
 export const SURROGATE_KEY = 'surrogate-key';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-te
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/TE
+ */
+export const TE = 'te';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-user-agent
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
+ */
+export const USER_AGENT = 'user-agent';
 
 /**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary
