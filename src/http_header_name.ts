@@ -194,6 +194,12 @@ export const SURROGATE_CONTROL = 'surrogate-control';
 export const SURROGATE_KEY = 'surrogate-key';
 
 /**
+ *  - https://w3c.github.io/resource-timing/#sec-timing-allow-origin
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin
+ */
+export const TIMING_ALLOW_ORIGIN = 'timing-allow-origin';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-te
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/TE
  */
