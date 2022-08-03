@@ -4,17 +4,6 @@
  */
 
 /**
- *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-authentication-info
- */
-export const AUTHENTICATION_INFO = 'authentication-info';
-
-/**
- *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-authorization
- *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
- */
-export const AUTHORIZATION = 'authorization';
-
-/**
  *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Age
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-age
  */
@@ -25,6 +14,17 @@ export const AGE = 'age';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Allow
  */
 export const ALLOW = 'allow';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-authentication-info
+ */
+export const AUTHENTICATION_INFO = 'authentication-info';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-authorization
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Authorization
+ */
+export const AUTHORIZATION = 'authorization';
 
 /**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
