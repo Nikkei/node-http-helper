@@ -34,7 +34,7 @@
         "typecheck": "tsc --noEmit",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "test": ""
+        "test": "ava"
     },
     "repository": {
         "type": "git",
@@ -47,6 +47,7 @@
     },
     "homepage": "https://github.com/Nikkei/node-http-helper",
     "devDependencies": {
+        "ava": "^4.3.1",
         "prettier": "^2.7.1",
         "typescript": "^4.7.4"
     },

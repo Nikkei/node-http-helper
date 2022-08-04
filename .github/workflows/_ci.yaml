@@ -19,13 +19,13 @@ jobs:
             - uses: ./.github/actions/prepare_ci
             - run: npm run build:publish
 
-    build:
+    unittest:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
-            - run: npm test
+            - run: npm run test
 
     check_format:
         runs-on: ubuntu-latest
