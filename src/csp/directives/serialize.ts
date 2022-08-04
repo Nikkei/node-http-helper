@@ -10,7 +10,7 @@ export function serializeDirective<TName extends string>(
     sources: Iterable<string>
 ): SerializedDirective<TName> {
     if (typeof sources === 'string' || sources instanceof String) {
-        throw new TypeError(`sources must not be string.`);
+        throw new TypeError(`For ${name} construction, sources must not be string.`);
     }
 
     const sourceList = Array.isArray(sources) ? sources : Array.from(sources);
