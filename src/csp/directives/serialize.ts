@@ -13,8 +13,7 @@ export function serializeDirective<TName extends string>(
         throw new TypeError(`sources must not be string.`);
     }
 
-    const sourceList = Array.isArray(sources) ? sources : Array.from(sources);
-    const sourceListStr = serializeSourceList(sourceList);
+    const sourceListStr = serializeSourceList(sources);
     const result: SerializedDirective<TName> = `${name} ${sourceListStr}`;
     return result;
 }
