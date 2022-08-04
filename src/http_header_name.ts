@@ -113,6 +113,12 @@ export const CACHE_CONTROL = 'cache-control';
 export const CACHE_STATUS = 'cache-status';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-connection
+ *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Connection
+ */
+export const CONNECTION = 'connection';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-encoding
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
  */
@@ -212,6 +218,12 @@ export const EXPIRES = 'expires';
 export const FROM = 'from';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-host-and-authority
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host
+ */
+export const HOST = 'host';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-last-modified
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified
  */
@@ -222,6 +234,11 @@ export const LAST_MODIFIED = 'last-modified';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location
  */
 export const LOCATION = 'location';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-max-forwards
+ */
+export const MAX_FORWARDS = 'max-forwards';
 
 /**
  *  - https://fetch.spec.whatwg.org/#origin-header
@@ -332,10 +349,24 @@ export const TIMING_ALLOW_ORIGIN = 'timing-allow-origin';
 export const TE = 'te';
 
 /**
+ *  This field is specific to HTTP/1.1. **Disallowed in HTTP/2**.
+ *
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-upgrade
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade
+ */
+export const UPGRADE = 'upgrade';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-user-agent
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
  */
 export const USER_AGENT = 'user-agent';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-via
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Via
+ */
+export const VIA = 'via';
 
 /**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary
