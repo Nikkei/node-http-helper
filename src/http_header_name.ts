@@ -1,6 +1,9 @@
 /**
  *  - We don't use TypeScript enum for constants defined in this module to make them tree-shaking friendly.
  *  - This module should only contain well known http header field name values.
+ *
+ *  @see
+ *      - https://www.iana.org/assignments/http-fields/http-fields.xhtml
  */
 
 /**
