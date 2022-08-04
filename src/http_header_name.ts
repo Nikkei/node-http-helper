@@ -152,6 +152,34 @@ export const CONTENT_TYPE = 'content-type';
 export const COOKIE = 'cookie';
 
 /**
+ *  - https://html.spec.whatwg.org/multipage/origin.html#coep
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy
+ */
+export const CROSS_ORIGIN_EMBEDDER_POLICY = 'cross-origin-embedder-policy';
+
+/**
+ *  - https://html.spec.whatwg.org/multipage/origin.html#coep
+ */
+export const CROSS_ORIGIN_EMBEDDER_POLICY_REPORT_ONLY = 'cross-origin-embedder-policy-report-only';
+
+/**
+ *  - https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policies
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy
+ */
+export const CROSS_ORIGIN_OPENER_POLICY = 'cross-origin-opener-policy';
+
+/**
+ *  - https://html.spec.whatwg.org/multipage/origin.html#cross-origin-opener-policies
+ */
+export const CROSS_ORIGIN_OPENER_POLICY_REPORT_ONLY = 'cross-origin-opener-policy-report-only';
+
+/**
+ *  - https://fetch.spec.whatwg.org/#cross-origin-resource-policy-header
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Resource-Policy
+ */
+export const CROSS_ORIGIN_RESOURCE_POLICY = 'cross-origin-resource-policy';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-etag
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
  */
