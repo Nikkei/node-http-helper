@@ -31,6 +31,12 @@ export const ACCEPT_ENCODING = 'accept-encoding';
 export const ACCEPT_LANGUAGE = 'accept-language';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-accept-ranges
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Ranges
+ */
+export const ACCEPT_RANGES = 'accept-ranges';
+
+/**
  *  - https://fetch.spec.whatwg.org/#http-access-control-allow-credentials
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
  */
@@ -141,6 +147,12 @@ export const CONTENT_LENGTH = 'content-length';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Location
  */
 export const CONTENT_LOCATION = 'content-location';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-range
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Range
+ */
+export const CONTENT_RANGE = 'content-range';
 
 /**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
@@ -262,6 +274,12 @@ export const PROXY_AUTHENTICATION_INFO = 'proxy-authentication-info';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authorization
  */
 export const PROXY_AUTHORIZATION = 'proxy-authorization';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-range
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range
+ */
+export const RANGE = 'range';
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-referer
