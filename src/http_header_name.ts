@@ -79,7 +79,7 @@ export const ACCESS_CONTROL_REQUEST_HEADERS = 'access-control-request-headers';
 export const ACCESS_CONTROL_REQUEST_METHOD = 'access-control-request-method';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Age
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Age
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-age
  */
 export const AGE = 'age';
@@ -114,7 +114,7 @@ export const CACHE_STATUS = 'cache-status';
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-connection
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Connection
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection
  */
 export const CONNECTION = 'connection';
 
@@ -160,7 +160,7 @@ export const CONTENT_SECURITY_POLICY_REPORT_ONLY = 'content-security-policy-repo
 export const CONTENT_TYPE = 'content-type';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cookie
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
 export const COOKIE = 'cookie';
@@ -206,7 +206,7 @@ export const ETag = 'etag';
 export const EXPECT = 'expect';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Expires
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-expires
  */
 export const EXPIRES = 'expires';
@@ -312,7 +312,7 @@ export const SERVER = 'server';
 export const SERVER_TIMING = 'server-timing';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Set-Cookie
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
 export const SET_COOKIE = 'set-cookie';
