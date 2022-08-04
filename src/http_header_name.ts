@@ -206,6 +206,12 @@ export const CROSS_ORIGIN_OPENER_POLICY_REPORT_ONLY = 'cross-origin-opener-polic
 export const CROSS_ORIGIN_RESOURCE_POLICY = 'cross-origin-resource-policy';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-date
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Date
+ */
+export const DATE = 'date';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-etag
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
  */
@@ -365,6 +371,12 @@ export const TIMING_ALLOW_ORIGIN = 'timing-allow-origin';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/TE
  */
 export const TE = 'te';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-trailer
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer
+ */
+export const TRAILER = 'trailer';
 
 /**
  *  This field is specific to HTTP/1.1. **Disallowed in HTTP/2**.
