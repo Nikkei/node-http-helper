@@ -296,6 +296,12 @@ export const SERVER_TIMING = 'server-timing';
 export const SET_COOKIE = 'set-cookie';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc6797.html
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
+ */
+export const STRICT_TRANSPORT_SECURITY = 'strict-transport-security';
+
+/**
  *  - https://developer.fastly.com/reference/http/http-headers/Surrogate-Control/
  *
  *  See also:
