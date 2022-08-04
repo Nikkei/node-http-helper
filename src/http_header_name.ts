@@ -242,6 +242,36 @@ export const FROM = 'from';
 export const HOST = 'host';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-match
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Match
+ */
+export const IF_MATCH = 'if-match';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-modified-since
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since
+ */
+export const IF_MODIFIED_SINCE = 'if-modified-since';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-none-match
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match
+ */
+export const IF_NONE_MATCH = 'if-none-match';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-unmodified-since
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Unmodified-Since
+ */
+export const IF_UNMODIFIED_SINCE = 'if-unmodified-since';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-range
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Range
+ */
+export const IF_RANGE = 'if-range';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-last-modified
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Last-Modified
  */
