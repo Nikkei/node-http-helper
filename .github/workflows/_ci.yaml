@@ -12,6 +12,13 @@ permissions:
 # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
 # https://docs.github.com/en/actions/learn-github-actions/contexts
 jobs:
+    ready_to_publish:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - uses: ./.github/actions/prepare_ci
+            - run: npm run build:publish
+
     build:
         runs-on: ubuntu-latest
         steps:
