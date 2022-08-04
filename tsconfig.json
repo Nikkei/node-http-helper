@@ -1,8 +1,11 @@
 {
     "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "declaration": true,
-        "outDir": "./__dist"
+        "outDir": "./__obj"
     },
-    "include": ["src/**/*"]
+    "include": [
+        // @prettier-ignore
+        "src/**/*",
+        "__tests__/**/*"
+    ]
 }

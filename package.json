@@ -24,8 +24,13 @@
         }
     },
     "scripts": {
-        "clean": "rm -rf __dist/",
-        "build": "tsc",
+        "clean": "npm run clean:dist && npm run clean:obj",
+        "clean:dist": "rm -rf __dist/",
+        "clean:obj": "rm -rf __obj/",
+        "prebuild": "npm run clean:obj",
+        "build": "tsc --project .",
+        "prebuild:publish": "npm run clean:dist",
+        "build:publish": "tsc --project ./tsconfig.publish.json",
         "typecheck": "tsc --noEmit",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
