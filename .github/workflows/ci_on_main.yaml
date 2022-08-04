@@ -7,6 +7,9 @@ on:
 
 # We don't limit this workflow concurrency because there are no order-sensitive workflow.
 
+permissions:
+    contents: read
+
 jobs:
     ci:
         uses: ./.github/workflows/_ci.yaml

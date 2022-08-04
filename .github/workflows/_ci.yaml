@@ -6,6 +6,9 @@ name: Basic CI workflow
 on:
     workflow_call:
 
+permissions:
+    contents: read
+
 # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
 # https://docs.github.com/en/actions/learn-github-actions/contexts
 jobs:
