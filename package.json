@@ -9,7 +9,7 @@
         "clean": "npm run clean --workspaces",
         "prebuild": "npm run clean",
         "build": "tsc --build",
-        "typecheck": "npm run build",
+        "typecheck": "tsc --build",
         "test": "npm run test --workspace=packages/unittests",
         "format": "prettier . --write",
         "format:check": "prettier . --check"
