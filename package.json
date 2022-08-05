@@ -1,0 +1,8 @@
+{
+    "name": "@nikkei/http-helper-monorepo",
+    "private": true,
+    "type": "module",
+    "workspaces": [
+        "packages/*"
+    ]
+}
