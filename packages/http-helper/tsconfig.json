@@ -1,5 +1,5 @@
 {
-    "extends": "./tsconfig.base.json",
+    "extends": "../../tsconfig.base.project_reference.json",
     "compilerOptions": {
         "outDir": "./__obj"
     },

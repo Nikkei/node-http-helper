@@ -6,6 +6,10 @@
         "packages/*"
     ],
     "scripts": {
+        "clean": "npm run clean --workspaces",
+        "prebuild": "npm run clean",
+        "build": "tsc --build",
+        "typecheck": "npm run build",
         "format": "prettier . --write",
         "format:check": "prettier . --check"
     },

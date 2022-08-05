@@ -1,0 +1,13 @@
+// This file contains basic options which are required by project reference
+// https://www.typescriptlang.org/docs/handbook/project-references.html
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "composite": true,
+        "declaration": true,
+        "noEmit": false,
+        // This is not required for project reference's minimum set.
+        // But we add this to here to avoid emit codes side-by-side accidentally,
+        "outDir": "__dist"
+    }
+}

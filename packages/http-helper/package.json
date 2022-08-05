@@ -31,7 +31,6 @@
         "build": "tsc --project .",
         "prebuild:publish": "npm run clean:dist",
         "build:publish": "tsc --project ./tsconfig.publish.json",
-        "typecheck": "tsc --noEmit",
         "test": "ava"
     },
     "repository": {

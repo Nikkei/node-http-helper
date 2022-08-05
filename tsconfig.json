@@ -1,0 +1,12 @@
+{
+    "extends": "./tsconfig.base.json",
+    "compilerOptions": {
+        "noEmit": true
+    },
+    "exclude": ["./packages/**/*"],
+    "references": [
+        {
+            "path": "./packages/http-helper"
+        }
+    ]
+}
