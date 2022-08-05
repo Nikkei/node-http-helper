@@ -40,9 +40,6 @@
         "url": "https://github.com/Nikkei/node-http-helper/issues"
     },
     "homepage": "https://github.com/Nikkei/node-http-helper",
-    "devDependencies": {
-        "typescript": "^4.7.4"
-    },
     "dependencies": {
         "option-t": "^32.5.0"
     }
