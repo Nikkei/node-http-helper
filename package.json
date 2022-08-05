@@ -4,5 +4,12 @@
     "type": "module",
     "workspaces": [
         "packages/*"
-    ]
+    ],
+    "scripts": {
+        "format": "prettier . --write",
+        "format:check": "prettier . --check"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1"
+    }
 }
