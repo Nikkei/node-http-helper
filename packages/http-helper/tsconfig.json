@@ -1,11 +1,11 @@
 {
     "extends": "../../tsconfig.base.project_reference.json",
     "compilerOptions": {
-        "outDir": "./__obj"
+        "outDir": "./__dist",
+        "rootDir": "./src"
     },
     "include": [
         // @prettier-ignore
-        "src/**/*",
-        "__tests__/**/*"
+        "src/**/*"
     ]
 }

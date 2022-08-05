@@ -1,5 +1,5 @@
 import test from 'ava';
-import { schemeSource, hostSource, nonceSource, hashSource, uriReference } from '../../src/csp/mod.js';
+import { schemeSource, hostSource, nonceSource, hashSource, uriReference } from '@nikkei/http-helper/csp';
 
 test('schemeSource', (t) => {
     const actual: string = schemeSource('https');

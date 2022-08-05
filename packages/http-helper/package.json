@@ -24,13 +24,11 @@
         }
     },
     "scripts": {
-        "clean": "npm run clean:dist && npm run clean:obj",
+        "clean": "npm run clean:dist && npm run clean:tsbuildinfo",
         "clean:dist": "rm -rf __dist/",
-        "clean:obj": "rm -rf __obj/",
-        "prebuild": "npm run clean:obj",
+        "clean:tsbuildinfo": "rm -rf tsconfig.tsbuildinfo",
+        "prebuild": "npm run clean",
         "build": "tsc --project .",
-        "prebuild:publish": "npm run clean:dist",
-        "build:publish": "tsc --project ./tsconfig.publish.json",
         "test": "ava"
     },
     "repository": {

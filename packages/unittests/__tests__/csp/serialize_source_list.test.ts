@@ -1,6 +1,6 @@
 import test from 'ava';
 import type { Nullable } from 'option-t/Nullable/Nullable';
-import { serializeSourceList } from '../../src/csp/mod.js';
+import { serializeSourceList } from '@nikkei/http-helper/csp';
 
 {
     const testcaseList: Array<[title: string, input: Iterable<Nullable<string>>, expected: string]> = [

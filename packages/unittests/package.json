@@ -1,0 +1,13 @@
+{
+    "name": "@nikkei/http-helper-unittests",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "clean": "rm -rf __obj/"
+    },
+    "dependencies": {
+        "@nikkei/http-helper": "*",
+        "option-t": "^32.5.0"
+    }
+}

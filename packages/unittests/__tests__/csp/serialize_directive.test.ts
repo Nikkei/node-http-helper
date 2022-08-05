@@ -1,6 +1,6 @@
 import test from 'ava';
 import type { Nullable } from 'option-t/Nullable/Nullable';
-import { serializeDirective } from '../../src/csp/mod.js';
+import { serializeDirective } from '@nikkei/http-helper/csp';
 
 test('serializeDirective: should throw if string to 2nd argument directly', (t) => {
     const NAME = 'test-directive';
