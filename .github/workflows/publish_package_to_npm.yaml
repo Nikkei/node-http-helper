@@ -17,7 +17,7 @@ jobs:
         steps:
             - uses: actions/checkout@v3
             - uses: ./.github/actions/prepare_ci
-            - run: npm run build:publish
+            - run: npm run build
               shell: bash
             - run: npm publish --workspace=packages/http-helper --access=restricted
               shell: bash
