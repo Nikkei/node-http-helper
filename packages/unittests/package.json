@@ -4,10 +4,12 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "clean": "rm -rf __obj/"
+        "clean": "rm -rf __obj/",
+        "test": "ava"
     },
     "dependencies": {
         "@nikkei/http-helper": "*",
+        "ava": "^4.3.1",
         "option-t": "^32.5.0"
     }
 }
