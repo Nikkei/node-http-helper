@@ -108,6 +108,11 @@ export const AUTHORIZATION = 'authorization';
 export const CACHE_CONTROL = 'cache-control';
 
 /**
+ *  https://www.rfc-editor.org/rfc/rfc9211#name-the-cache-status-http-respo
+ */
+export const CACHE_STATUS = 'cache-status';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-encoding
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
  */
