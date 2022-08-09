@@ -1,11 +1,15 @@
 {
     "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "outDir": "./__obj"
+        "noEmit": true
     },
-    "include": [
-        // @prettier-ignore
-        "src/**/*",
-        "__tests__/**/*"
+    "exclude": ["./packages/**/*"],
+    "references": [
+        {
+            "path": "./packages/http-helper"
+        },
+        {
+            "path": "./packages/unittests"
+        }
     ]
 }

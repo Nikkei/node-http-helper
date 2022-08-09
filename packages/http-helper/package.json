@@ -1,0 +1,46 @@
+{
+    "name": "@nikkei/http-helper",
+    "version": "0.7.0",
+    "type": "module",
+    "files": [
+        "__dist/",
+        "LICENSE",
+        "package.json",
+        "README.md"
+    ],
+    "typings": "./__dist/mod.d.ts",
+    "exports": {
+        ".": {
+            "types": "./__dist/mod.d.ts",
+            "default": "./__dist/mod.js"
+        },
+        "./auth": {
+            "types": "./__dist/auth/mod.d.ts",
+            "default": "./__dist/auth/mod.js"
+        },
+        "./csp": {
+            "types": "./__dist/csp/mod.d.ts",
+            "default": "./__dist/csp/mod.js"
+        }
+    },
+    "scripts": {
+        "clean": "npm run clean:dist && npm run clean:tsbuildinfo",
+        "clean:dist": "rm -rf __dist/",
+        "clean:tsbuildinfo": "rm -rf tsconfig.tsbuildinfo",
+        "prebuild": "npm run clean",
+        "build": "tsc --project ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Nikkei/node-http-helper.git"
+    },
+    "author": "Nikkei Inc.",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/Nikkei/node-http-helper/issues"
+    },
+    "homepage": "https://github.com/Nikkei/node-http-helper",
+    "dependencies": {
+        "option-t": "^32.5.0"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "extends": "../../tsconfig.base.project_reference.json",
+    "compilerOptions": {
+        "outDir": "./__obj"
+    },
+    "include": ["**/**/*"],
+    "references": [
+        {
+            "path": "../http-helper"
+        }
+    ]
+}

@@ -1,5 +1,5 @@
 import test from 'ava';
-import { serializePolicy } from '../../src/csp/mod.js';
+import { serializePolicy } from '@nikkei/http-helper/csp';
 
 {
     const testcaseList: Array<[title: string, input: Iterable<string | null>, expected: string]> = [

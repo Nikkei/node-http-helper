@@ -1,5 +1,5 @@
 import test from 'ava';
-import { bearerAuthValue } from '../../src/auth/mod.js';
+import { bearerAuthValue } from '@nikkei/http-helper/auth';
 
 test('bearerAuthValue() should be expected result', (t) => {
     const input = String(Math.random());

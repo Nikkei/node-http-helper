@@ -1,3 +1,4 @@
 # Generated files
-__dist/**/*.*
-__obj/**/*.*
+package-lock.json
+**/__dist/**/*.*
+**/__obj/**/*.*

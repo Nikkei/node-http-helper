@@ -1,57 +1,21 @@
 {
-    "name": "@nikkei/http-helper",
-    "version": "0.7.0",
+    "name": "@nikkei/http-helper-monorepo",
+    "private": true,
     "type": "module",
-    "files": [
-        "__dist/",
-        "LICENSE",
-        "package.json",
-        "README.md"
+    "workspaces": [
+        "packages/*"
     ],
-    "typings": "./__dist/mod.d.ts",
-    "exports": {
-        ".": {
-            "types": "./__dist/mod.d.ts",
-            "default": "./__dist/mod.js"
-        },
-        "./auth": {
-            "types": "./__dist/auth/mod.d.ts",
-            "default": "./__dist/auth/mod.js"
-        },
-        "./csp": {
-            "types": "./__dist/csp/mod.d.ts",
-            "default": "./__dist/csp/mod.js"
-        }
-    },
     "scripts": {
-        "clean": "npm run clean:dist && npm run clean:obj",
-        "clean:dist": "rm -rf __dist/",
-        "clean:obj": "rm -rf __obj/",
-        "prebuild": "npm run clean:obj",
-        "build": "tsc --project .",
-        "prebuild:publish": "npm run clean:dist",
-        "build:publish": "tsc --project ./tsconfig.publish.json",
-        "typecheck": "tsc --noEmit",
+        "clean": "npm run clean --workspaces",
+        "prebuild": "npm run clean",
+        "build": "tsc --build",
+        "typecheck": "tsc --build",
+        "test": "npm run test --workspace=packages/unittests",
         "format": "prettier . --write",
-        "format:check": "prettier . --check",
-        "test": "ava"
+        "format:check": "prettier . --check"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Nikkei/node-http-helper.git"
-    },
-    "author": "Nikkei Inc.",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/Nikkei/node-http-helper/issues"
-    },
-    "homepage": "https://github.com/Nikkei/node-http-helper",
     "devDependencies": {
-        "ava": "^4.3.1",
         "prettier": "^2.7.1",
         "typescript": "^4.7.4"
-    },
-    "dependencies": {
-        "option-t": "^32.5.0"
     }
 }
