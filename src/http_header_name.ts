@@ -31,6 +31,12 @@ export const ACCEPT_ENCODING = 'accept-encoding';
 export const ACCEPT_LANGUAGE = 'accept-language';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-accept-ranges
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Ranges
+ */
+export const ACCEPT_RANGES = 'accept-ranges';
+
+/**
  *  - https://fetch.spec.whatwg.org/#http-access-control-allow-credentials
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Access-Control-Allow-Credentials
  */
@@ -79,7 +85,7 @@ export const ACCESS_CONTROL_REQUEST_HEADERS = 'access-control-request-headers';
 export const ACCESS_CONTROL_REQUEST_METHOD = 'access-control-request-method';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Age
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Age
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-age
  */
 export const AGE = 'age';
@@ -113,6 +119,12 @@ export const CACHE_CONTROL = 'cache-control';
 export const CACHE_STATUS = 'cache-status';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-connection
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection
+ */
+export const CONNECTION = 'connection';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-encoding
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Encoding
  */
@@ -137,6 +149,12 @@ export const CONTENT_LENGTH = 'content-length';
 export const CONTENT_LOCATION = 'content-location';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-content-range
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Range
+ */
+export const CONTENT_RANGE = 'content-range';
+
+/**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy
  *  - https://w3c.github.io/webappsec-csp/#csp-header
  */
@@ -154,7 +172,7 @@ export const CONTENT_SECURITY_POLICY_REPORT_ONLY = 'content-security-policy-repo
 export const CONTENT_TYPE = 'content-type';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Cookie
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
 export const COOKIE = 'cookie';
@@ -188,6 +206,12 @@ export const CROSS_ORIGIN_OPENER_POLICY_REPORT_ONLY = 'cross-origin-opener-polic
 export const CROSS_ORIGIN_RESOURCE_POLICY = 'cross-origin-resource-policy';
 
 /**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-date
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Date
+ */
+export const DATE = 'date';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-etag
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
  */
@@ -200,7 +224,7 @@ export const ETag = 'etag';
 export const EXPECT = 'expect';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Expires
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Expires
  *  - https://www.rfc-editor.org/rfc/rfc9111.html#name-expires
  */
 export const EXPIRES = 'expires';
@@ -210,6 +234,42 @@ export const EXPIRES = 'expires';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/From
  */
 export const FROM = 'from';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-host-and-authority
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Host
+ */
+export const HOST = 'host';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-match
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Match
+ */
+export const IF_MATCH = 'if-match';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-modified-since
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Modified-Since
+ */
+export const IF_MODIFIED_SINCE = 'if-modified-since';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-none-match
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-None-Match
+ */
+export const IF_NONE_MATCH = 'if-none-match';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-unmodified-since
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Unmodified-Since
+ */
+export const IF_UNMODIFIED_SINCE = 'if-unmodified-since';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-if-range
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/If-Range
+ */
+export const IF_RANGE = 'if-range';
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-last-modified
@@ -222,6 +282,11 @@ export const LAST_MODIFIED = 'last-modified';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Location
  */
 export const LOCATION = 'location';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-max-forwards
+ */
+export const MAX_FORWARDS = 'max-forwards';
 
 /**
  *  - https://fetch.spec.whatwg.org/#origin-header
@@ -245,6 +310,12 @@ export const PROXY_AUTHENTICATION_INFO = 'proxy-authentication-info';
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authorization
  */
 export const PROXY_AUTHORIZATION = 'proxy-authorization';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-range
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Range
+ */
+export const RANGE = 'range';
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-referer
@@ -295,7 +366,7 @@ export const SERVER = 'server';
 export const SERVER_TIMING = 'server-timing';
 
 /**
- *  - https://developer.mozilla.org/ja/docs/Web/HTTP/Headers/Set-Cookie
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie
  *  - https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-10.html
  */
 export const SET_COOKIE = 'set-cookie';
@@ -320,22 +391,42 @@ export const SURROGATE_CONTROL = 'surrogate-control';
 export const SURROGATE_KEY = 'surrogate-key';
 
 /**
- *  - https://w3c.github.io/resource-timing/#sec-timing-allow-origin
- *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin
- */
-export const TIMING_ALLOW_ORIGIN = 'timing-allow-origin';
-
-/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-te
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/TE
  */
 export const TE = 'te';
 
 /**
+ *  - https://w3c.github.io/resource-timing/#sec-timing-allow-origin
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Timing-Allow-Origin
+ */
+export const TIMING_ALLOW_ORIGIN = 'timing-allow-origin';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-trailer
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer
+ */
+export const TRAILER = 'trailer';
+
+/**
+ *  This field is specific to HTTP/1.1. **Disallowed in HTTP/2**.
+ *
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-upgrade
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade
+ */
+export const UPGRADE = 'upgrade';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-user-agent
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent
  */
 export const USER_AGENT = 'user-agent';
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-via
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Via
+ */
+export const VIA = 'via';
 
 /**
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary
