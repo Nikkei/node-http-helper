@@ -24,9 +24,7 @@
         }
     },
     "scripts": {
-        "clean": "npm run clean:dist && npm run clean:tsbuildinfo",
-        "clean:dist": "rm -rf __dist/",
-        "clean:tsbuildinfo": "rm -rf tsconfig.tsbuildinfo",
+        "clean": "zx ./tools/clean.js",
         "prebuild": "npm run clean",
         "build": "tsc --project ."
     },
