@@ -1,0 +1,21 @@
+version: 2
+
+# https://docs.github.com/en/github/administering-a-repository/configuration-options-for-dependency-updates
+updates:
+    - package-ecosystem: github-actions
+      directory: '/'
+      schedule:
+          interval: weekly
+      open-pull-requests-limit: 99
+      labels:
+          - 'A-dependency/gardening'
+          - I-enhancement
+
+    - package-ecosystem: npm
+      directory: '/'
+      schedule:
+          interval: weekly
+      open-pull-requests-limit: 99
+      labels:
+          - 'A-dependency/gardening'
+          - I-enhancement
