@@ -56,6 +56,58 @@ export const RESET_CONTENT_205 = 205;
  */
 export const PARTIAL_CONTENT_206 = 206;
 
+//////// https://www.rfc-editor.org/rfc/rfc9110.html#name-redirection-3xx
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-300-multiple-choices
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/300
+ */
+export const MULTIPLE_CHOICES_300 = 300;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-301-moved-permanently
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301
+ */
+export const MOVED_PERMANENTLY_301 = 301;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-302-found
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/302
+ */
+export const FOUND_302 = 302;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-303-see-other
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/303
+ */
+export const SEE_OTHER_303 = 303;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-304-not-modified
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/304
+ */
+export const NOT_MODIFIED_304 = 304;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-305-use-proxy
+ */
+export const USE_PROXY_305 = 305;
+
+// We don't define 306 because it's resereved code and is not used in the current spec. We don't define it.
+//  - https://www.rfc-editor.org/rfc/rfc9110.html#name-306-unused
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-307-temporary-redirect
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/307
+ */
+export const TEMPORARY_REDIRECT_307 = 307;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-308-permanent-redirect
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/308
+ */
+export const PERMANENT_REDIRECT_308 = 308;
+
 //////// https://www.rfc-editor.org/rfc/rfc9110.html#name-client-error-4xx
 
 /**
