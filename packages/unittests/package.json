@@ -5,6 +5,7 @@
     "type": "module",
     "scripts": {
         "clean": "rm -rf __obj/",
+        "pretest": "tsc --build",
         "test": "ava"
     },
     "dependencies": {
