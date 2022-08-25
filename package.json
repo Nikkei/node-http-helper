@@ -11,7 +11,7 @@
         "build": "tsc --build",
         "typecheck": "tsc --build",
         "pretest": "npm run build",
-        "test": "npm run test --workspace=packages/unittests",
+        "test": "npm run test:run_only",
         "test:run_only": "npm run test --workspace=packages/unittests",
         "format": "prettier . --write",
         "format:check": "prettier . --check"
