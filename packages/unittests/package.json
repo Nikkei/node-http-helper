@@ -9,7 +9,7 @@
     },
     "dependencies": {
         "@nikkei/http-helper": "*",
-        "ava": "^4.3.1",
+        "ava": "^4.3.3",
         "option-t": "^32.6.0"
     }
 }
