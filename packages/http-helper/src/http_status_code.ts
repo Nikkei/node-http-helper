@@ -220,6 +220,24 @@ export const UNPROCESSABLE_CONTENT_422 = 422;
  */
 export const UPGRADE_REQUIRED_426 = 426;
 
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc6585.html#section-3
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/428
+ */
+export const PRECONDITION_REQUIRED_428 = 428;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc6585.html#section-4
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429
+ */
+export const TOO_MANY_REQUESTS_429 = 429;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc6585#section-5
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/431
+ */
+export const REQUEST_HEADER_FIELDS_TOO_LARGE_431 = 431;
+
 //////// https://www.rfc-editor.org/rfc/rfc9110.html#name-server-error-5xx
 
 /**
@@ -252,3 +270,9 @@ export const GATEWAY_TIMEOUT_504 = 504;
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/505
  */
 export const HTTP_VERSION_NOT_SUPPORTED_505 = 505;
+
+/**
+ *  - https://www.rfc-editor.org/rfc/rfc6585.html#section-6
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511
+ */
+export const NETWORK_AUTHENTICATION_REQUIRED_511 = 511;
