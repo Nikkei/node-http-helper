@@ -324,6 +324,12 @@ export const RANGE = 'range';
 export const REFERER = 'referer';
 
 /**
+ *  - https://w3c.github.io/webappsec-referrer-policy/
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
+ */
+export const REFERRER_POLICY = 'referrer-policy';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-retry-after
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Retry-After
  */
