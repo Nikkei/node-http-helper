@@ -41,6 +41,6 @@
     },
     "homepage": "https://github.com/Nikkei/node-http-helper",
     "dependencies": {
-        "option-t": "^32.6.0"
+        "option-t": "^32.6.5"
     }
 }
