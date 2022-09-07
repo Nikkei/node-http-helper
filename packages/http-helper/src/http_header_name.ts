@@ -336,6 +336,58 @@ export const REFERRER_POLICY = 'referrer-policy';
 export const RETRY_AFTER = 'retry-after';
 
 /**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA
+ */
+export const SEC_CH_UA = 'sec-ch-ua';
+
+/**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-arch
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Arch
+ */
+export const SEC_CH_UA_ARCH = 'sec-ch-ua-arch';
+
+/**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-bitness
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Bitness
+ */
+export const SEC_CH_UA_BITNESS = 'sec-ch-ua-bitness';
+
+/**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-full-version-list
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Full-Version-List
+ */
+export const SEC_CH_UA_FULL_VERSION_LIST = 'sec-ch-ua-full-version-list';
+/**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-mobile
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Mobile
+ */
+export const SEC_CH_UA_MOBILE = 'sec-ch-ua-mobile';
+/**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-model
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Model
+ */
+export const SEC_CH_UA_MODEL = 'sec-ch-ua-model';
+/**
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform
+ */
+export const SEC_CH_UA_PLATFORM = 'sec-ch-ua-platform';
+
+/**
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform-Version
+ *  - https://wicg.github.io/ua-client-hints/#sec-ch-ua-platform-version
+ */
+export const SEC_CH_UA_PLATFORM_VERSION = 'sec-ch-ua-platform-version';
+
+/**
+ *  XXX:
+ *  https://wicg.github.io/ua-client-hints/#sec-ch-ua-wow64
+ *  We think we don't have to implement `Sec-CH-UA-WoW64` because all major web engines have 64 bit support natively.
+ *  We guess there is no requirement for this kind of information practically.
+ */
+
+/**
  *  - https://w3c.github.io/webappsec-fetch-metadata/#http-headerdef-sec-fetch-dest
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-Fetch-Dest
  */
