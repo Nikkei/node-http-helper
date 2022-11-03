@@ -215,7 +215,13 @@ export const DATE = 'date';
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-etag
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/ETag
  */
-export const ETag = 'etag';
+export const ETAG = 'etag';
+
+/**
+ *  @deprecated
+ *  Use {@link ETAG} instead. This will be removed in a future release.
+ */
+export const ETag = ETAG;
 
 /**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-expect
