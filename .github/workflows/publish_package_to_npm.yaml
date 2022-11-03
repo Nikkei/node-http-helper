@@ -19,7 +19,7 @@ jobs:
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
               shell: bash
-            - run: npm publish --workspace=packages/http-helper --access=restricted
+            - run: npm publish --workspace=packages/http-helper --access=public
               shell: bash
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
