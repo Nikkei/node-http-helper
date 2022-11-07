@@ -1,6 +1,6 @@
 {
     "name": "@nikkei/http-helper",
-    "version": "0.10.2",
+    "version": "0.10.3",
     "type": "module",
     "files": [
         "__dist/",
