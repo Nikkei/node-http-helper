@@ -10,6 +10,6 @@
     "dependencies": {
         "@nikkei/http-helper": "*",
         "ava": "^5.2.0",
-        "option-t": "^34.0.0"
+        "option-t": "^35.0.0"
     }
 }
