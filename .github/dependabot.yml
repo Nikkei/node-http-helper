@@ -19,3 +19,12 @@ updates:
       labels:
           - 'A-dependency/gardening'
           - I-enhancement
+      ignore:
+          # When we upgrade TypeScript, the emitted d.ts code may contain some breaking changes.
+          # This mean that we should release its change as major update strictly.
+          # Our (current) design allows that an user project contains multiple version of this
+          # So we cap to update typescript by dependabot.
+          # This does not mean to restrict us. We can update typescript when we want!
+          # This make to stop the automatic flow for it.
+          - dependency-name: typescript
+            update-types: ['version-update:semver-major', 'version-update:semver-minor']
