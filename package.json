@@ -12,6 +12,7 @@
         "typecheck": "tsc --build",
         "pretest": "npm run build",
         "lint": "eslint .",
+        "lint:fix": "npm run lint -- --fix",
         "test": "npm run test:run_only",
         "test:run_only": "npm run test --workspace=packages/unittests",
         "format": "prettier . --write",
@@ -19,6 +20,8 @@
     },
     "devDependencies": {
         "@eslint/js": "^8.37.0",
+        "@typescript-eslint/eslint-plugin": "^5.57.1",
+        "@typescript-eslint/parser": "^5.57.1",
         "eslint": "^8.37.0",
         "eslint-config-prettier": "^8.8.0",
         "globals": "^13.20.0",

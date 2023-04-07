@@ -31,6 +31,7 @@ declare const HostSourceMarker: unique symbol;
  */
 export type HostSource = string & { readonly [HostSourceMarker]: unknown };
 export function hostSource(host: string): HostSource {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Cheat to do nominal typing.
     return host as any;
 }
 
@@ -82,5 +83,6 @@ declare const URIReferenceMarker: unique symbol;
 export type URIReference = string & { readonly [URIReferenceMarker]: unknown };
 
 export function uriReference(value: string): URIReference {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any -- Cheat to do nominal typing.
     return value as any;
 }

@@ -1,8 +1,16 @@
 import js from '@eslint/js';
+import tsESLintPlugin from '@typescript-eslint/eslint-plugin';
+import tsESLintParser from '@typescript-eslint/parser';
+
 import presets from 'eslint-config-prettier';
 import globals from 'globals';
 
 const ecmaVersion = 2022;
+
+// See @typescript-eslint/eslint-plugin/dist/configs/eslint-recommended.js
+const tsESLintPresetsESLintRecommendedRules = tsESLintPlugin.configs['eslint-recommended'].overrides[0].rules;
+// See @typescript-eslint/eslint-plugin/dist/configs/recommended.js
+const tsESLintPresetsRecommendedRules = tsESLintPlugin.configs.recommended.rules;
 
 const prettierRules = Object.freeze({
     ...presets.rules,
@@ -65,6 +73,46 @@ export default [
                 ...globals.node,
                 ...globals.commonjs,
             },
+        },
+    },
+    {
+        files: [
+            // @prettier-ignore
+            '**/*.ts',
+            '**/*.mts',
+            '**/*.cts',
+        ],
+        plugins: {
+            '@typescript-eslint': tsESLintPlugin,
+        },
+        languageOptions: {
+            parser: tsESLintParser,
+            sourceType: 'module',
+            globals: {
+                ...globals.builtin,
+            },
+        },
+        rules: {
+            // For legacy config, `recommended` presets extends `eslint-recommended` automatically.
+            // But this is new (flat) config. We need extends rules by hand.
+            ...tsESLintPresetsESLintRecommendedRules,
+            ...tsESLintPresetsRecommendedRules,
+
+            ...prettierRules,
+
+            '@typescript-eslint/consistent-type-definitions': ['warn', 'interface'],
+            '@typescript-eslint/no-redeclare': 'error',
+
+            // We would like to sort the import styles.
+            '@typescript-eslint/consistent-type-imports': [
+                'warn',
+                {
+                    prefer: 'type-imports',
+                },
+            ],
+            // We want to make typescript's import erasure behavior consistently.
+            // by enabling `--verbatimModuleSyntax` option.
+            '@typescript-eslint/no-import-type-side-effects': 'warn',
         },
     },
 ];

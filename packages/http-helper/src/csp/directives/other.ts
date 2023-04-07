@@ -2,7 +2,7 @@
  *  https://w3c.github.io/webappsec-csp/#directives-other
  */
 
-import { type SerializedDirective } from './serialize.js';
+import type { SerializedDirective } from './serialize.js';
 
 // https://w3c.github.io/webappsec-csp/#directive-webrtc
 // We think there is no implementation of this directive by MDN
