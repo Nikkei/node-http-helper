@@ -1,0 +1,4 @@
+{
+    // With dbaeumer.vscode-eslint v2.4.0, we need to enable this option explicitly.
+    "eslint.experimental.useFlatConfig": true
+}

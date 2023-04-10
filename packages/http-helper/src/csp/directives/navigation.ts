@@ -1,7 +1,7 @@
 /**
  *  https://w3c.github.io/webappsec-csp/#directives-navigation
  */
-import { type SerializedDirective } from './serialize.js';
+import type { SerializedDirective } from './serialize.js';
 
 /**
  *  - https://w3c.github.io/webappsec-csp/#directive-form-action

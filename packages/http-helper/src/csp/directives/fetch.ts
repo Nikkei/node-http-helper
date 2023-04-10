@@ -2,7 +2,7 @@
  *  https://w3c.github.io/webappsec-csp/#directives-fetch
  */
 
-import { type SerializedDirective } from './serialize.js';
+import type { SerializedDirective } from './serialize.js';
 
 /**
  *  - https://w3c.github.io/webappsec-csp/#directive-child-src
