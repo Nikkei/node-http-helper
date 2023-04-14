@@ -8,6 +8,13 @@ runs:
           with:
               node-version: 18
               cache: 'npm'
+
+        # - https://nodejs.org/docs/latest-v19.x/api/corepack.html
+        # - https://nodejs.org/docs/latest-v19.x/api/corepack.html
+        - name: Enable corepack
+          shell: bash
+          run: corepack enable
+
         - name: Install dependencies
           shell: bash
           run: npm ci
