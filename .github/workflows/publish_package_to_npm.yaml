@@ -14,12 +14,18 @@ jobs:
         needs: [ci]
         runs-on: ubuntu-latest
 
+        permissions:
+            contents: read
+            # This is required for provenance
+            # see https://docs.npmjs.com/generating-provenance-statements
+            id-token: write
+
         steps:
             - uses: actions/checkout@v3
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
               shell: bash
-            - run: npm publish --workspace=packages/http-helper --access=public
+            - run: npm publish --workspace=packages/http-helper --access=public --provenance
               shell: bash
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
