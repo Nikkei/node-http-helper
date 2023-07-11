@@ -13,7 +13,7 @@ test('serializeDirective: should throw if string to 2nd argument directly', (t) 
             instanceOf: TypeError,
             message: `For ${NAME} construction, sources must not be string.`,
         },
-        'typeof === "string" should throw'
+        'typeof === "string" should throw',
     );
 
     t.throws(
@@ -24,7 +24,7 @@ test('serializeDirective: should throw if string to 2nd argument directly', (t) 
             instanceOf: TypeError,
             message: `For ${NAME} construction, sources must not be string.`,
         },
-        '`instanceof String` should throw'
+        '`instanceof String` should throw',
     );
 });
 

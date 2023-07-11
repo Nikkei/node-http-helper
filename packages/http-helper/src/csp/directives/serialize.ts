@@ -8,7 +8,7 @@ export type SerializedDirective<TName extends string> = `${TName} ${string}`;
 
 export function serializeDirective<TName extends string>(
     name: TName,
-    sources: Iterable<Nullable<string>>
+    sources: Iterable<Nullable<string>>,
 ): SerializedDirective<TName> {
     if (typeof sources === 'string' || sources instanceof String) {
         throw new TypeError(`For ${name} construction, sources must not be string.`);
