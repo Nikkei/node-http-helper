@@ -15,7 +15,7 @@ test('schemeSource: throw an error', (t) => {
         {
             instanceOf: Error,
             message: `scheme should not be ends with :, but the actual is ${input}`,
-        }
+        },
     );
 });
 
