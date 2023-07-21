@@ -18,6 +18,10 @@
             "types": "./__dist/auth/mod.d.ts",
             "default": "./__dist/auth/mod.js"
         },
+        "./cache": {
+            "types": "./__dist/cache/mod.d.ts",
+            "default": "./__dist/cache/mod.js"
+        },
         "./csp": {
             "types": "./__dist/csp/mod.d.ts",
             "default": "./__dist/csp/mod.js"
