@@ -467,6 +467,18 @@ export const TE = 'te';
 export const TIMING_ALLOW_ORIGIN = 'timing-allow-origin';
 
 /**
+ *  - https://w3c.github.io/trace-context/#traceparent-header
+ *      - https://www.w3.org/TR/trace-context-2/#traceparent-header
+ */
+export const TRACEPARENT = 'traceparent';
+
+/**
+ *  - https://www.w3.org/TR/trace-context-2/#tracestate-header
+ *      - https://w3c.github.io/trace-context/#tracestate-header
+ */
+export const TRACESTATE = 'tracestate';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-trailer
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Trailer
  */
