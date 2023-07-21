@@ -119,6 +119,12 @@ export const CACHE_CONTROL = 'cache-control';
 export const CACHE_STATUS = 'cache-status';
 
 /**
+ *  - https://w3c.github.io/webappsec-clear-site-data/#header
+ *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Clear-Site-Data
+ */
+export const CLEAR_SITE_DATA = 'clear-site-data';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-connection
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Connection
  */
