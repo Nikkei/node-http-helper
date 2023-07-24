@@ -21,6 +21,10 @@
         "./csp": {
             "types": "./__dist/csp/mod.d.ts",
             "default": "./__dist/csp/mod.js"
+        },
+        "./sec_fetch": {
+            "types": "./__dist/sec_fetch/mod.d.ts",
+            "default": "./__dist/sec_fetch/mod.js"
         }
     },
     "scripts": {
