@@ -4,3 +4,4 @@ export * as HttpHeaderName from './http_header_name.js';
 export * as HttpMethod from './http_method.js';
 export * as HttpStatus from './http_status_code.js';
 export * as Mime from './mime.js';
+export { SecFetchMode } from './sec_fetch/mod.js';
