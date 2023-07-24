@@ -5,7 +5,8 @@
     "type": "module",
     "scripts": {
         "clean": "rm -rf __obj/",
-        "test": "ava"
+        "test": "ava",
+        "test:update_snapshots": "ava --update-snapshots"
     },
     "dependencies": {
         "@nikkei/http-helper": "*",
