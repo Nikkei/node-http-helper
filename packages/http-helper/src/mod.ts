@@ -1,4 +1,5 @@
 export * as Auth from './auth/mod.js';
+export * as ClearSiteData from './clear_site_data.js';
 export * as CSP from './csp/mod.js';
 export * as HttpHeaderName from './http_header_name.js';
 export * as HttpMethod from './http_method.js';
