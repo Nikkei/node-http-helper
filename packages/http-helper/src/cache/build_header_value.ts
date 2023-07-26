@@ -12,6 +12,6 @@ export function buildCacheControlValue(...items: Array<string>): string {
         throw new RangeError(`items must be > 0`);
     }
 
-    const result = items.join(', ');
+    const result = items.join(',');
     return result;
 }

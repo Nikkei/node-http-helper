@@ -8,7 +8,7 @@ test('valid case', (t) => {
         ResponseDirective.NO_STORE,
         Value.maxAge(0),
     );
-    t.is(actual, 'private, no-store, max-age=0');
+    t.is(actual, 'private,no-store,max-age=0');
 });
 
 test('call without any arguments', (t) => {
