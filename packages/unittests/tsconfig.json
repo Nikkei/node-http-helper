@@ -1,6 +1,7 @@
 {
     "extends": "../../tsconfig.base.project_reference.json",
     "compilerOptions": {
+        "noEmit": true,
         "outDir": "./__obj"
     },
     "include": ["**/**/*"],

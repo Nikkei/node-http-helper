@@ -1,0 +1,28 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SecFetchDest exported items 1`] = `
+{
+  "AUDIO": "audio",
+  "AUDIO_WORKLET": "audioworklet",
+  "DOCUMENT": "document",
+  "EMBED": "embed",
+  "EMPTY_STRING": "",
+  "FONT": "font",
+  "FRAME": "frame",
+  "IFRAME": "iframe",
+  "IMAGE": "image",
+  "MANIFEST": "manifest",
+  "OBJECT": "object",
+  "PAINT_WORKLET": "paintworklet",
+  "REPORT": "report",
+  "SCRIPT": "script",
+  "SERVICE_WORKER": "serviceworker",
+  "SHARED_WORKER": "sharedworker",
+  "STYLE": "style",
+  "TRACK": "track",
+  "VIDEO": "video",
+  "WEB_IDENTITY": "webidentity",
+  "WORKER": "worker",
+  "XSLT": "xslt",
+}
+`;

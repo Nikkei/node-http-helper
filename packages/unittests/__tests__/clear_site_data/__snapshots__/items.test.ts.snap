@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ClearSiteData entries 1`] = `
+{
+  "CACHE": ""cache"",
+  "COOKIES": ""cookies"",
+  "STORAGE": ""storage" ",
+  "WILDCARD": ""*"",
+  "buildValue": [Function],
+}
+`;

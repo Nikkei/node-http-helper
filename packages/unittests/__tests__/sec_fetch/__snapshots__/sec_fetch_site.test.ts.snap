@@ -1,0 +1,10 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SecFetchSite exported items 1`] = `
+{
+  "CROSS_SITE": "cross-site",
+  "NONE": "none",
+  "SAME_ORIGIN": "same-origin",
+  "SAME_SITE": "same-site",
+}
+`;

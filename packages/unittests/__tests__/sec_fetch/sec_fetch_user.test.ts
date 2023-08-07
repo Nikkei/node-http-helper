@@ -1,7 +1,7 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { SecFetchUser } from '@nikkei/http-helper/sec_fetch';
 
-test('SecFetchUser exported items', (t) => {
-    t.snapshot(SecFetchUser);
+test('SecFetchUser exported items', () => {
+    expect(SecFetchUser).toMatchSnapshot();
 });

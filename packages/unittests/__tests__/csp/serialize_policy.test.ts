@@ -1,4 +1,4 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 import { serializePolicy } from '@nikkei/http-helper/csp';
 
 {
@@ -9,9 +9,9 @@ import { serializePolicy } from '@nikkei/http-helper/csp';
         ['some values contains null', ['1', null, '2', null, '3', null], `1; 2; 3`],
     ];
     for (const [title, input, expected] of testcaseList) {
-        test(`serializePolicy: ${title}`, (t) => {
+        test(`serializePolicy: ${title}`, () => {
             const actual = serializePolicy(...input);
-            t.is(actual as string, expected);
+            expect(actual).toStrictEqual(expected);
         });
     }
 }

@@ -1,42 +1,32 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { Value } from '@nikkei/http-helper/cache';
 
 const maxAge = Value.maxAge;
 
-test('valid case', (t) => {
+test('valid case', () => {
     const input = 1215641321231;
     const actual = maxAge(input);
-    t.is(actual, `max-age=1215641321231`);
+    expect(actual).toBe(`max-age=1215641321231`);
 });
 
-test('pass float', (t) => {
+test('pass float', () => {
     const input = 3.1415;
 
-    t.throws(
-        () => {
-            maxAge(input);
-        },
-        {
-            instanceOf: TypeError,
-        },
-    );
+    expect(() => {
+        maxAge(input);
+    }).toThrowError(TypeError);
 });
 
-test('pass negative number', (t) => {
+test('pass negative number', () => {
     const input = -1;
 
-    t.throws(
-        () => {
-            maxAge(input);
-        },
-        {
-            instanceOf: RangeError,
-        },
-    );
+    expect(() => {
+        maxAge(input);
+    }).toThrowError(RangeError);
 });
 
-test('pass 0 as the argument', (t) => {
+test('pass 0 as the argument', () => {
     const actual = maxAge(0);
-    t.is(actual, `max-age=0`);
+    expect(actual).toBe(`max-age=0`);
 });

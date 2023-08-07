@@ -6,9 +6,6 @@
 __dist/
 __obj/
 
-## Excludes ava's snapshots
-!packages/unittests/__snapshots__/__obj/
-
 
 ###############################
 # Copied from https://github.com/github/gitignore/blob/7293c14345c205c679722364a01b88d331e862ff/Node.gitignore

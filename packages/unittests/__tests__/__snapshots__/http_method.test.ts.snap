@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HttpMethod exported items 1`] = `
+{
+  "CONNECT": "CONNECT",
+  "DELETE": "DELETE",
+  "GET": "GET",
+  "HEAD": "HEAD",
+  "OPTIONS": "OPTIONS",
+  "PATCH": "PATCH",
+  "POST": "POST",
+  "PUT": "PUT",
+  "TRACE": "TRACE",
+}
+`;

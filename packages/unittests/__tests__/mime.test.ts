@@ -1,7 +1,7 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { Mime } from '@nikkei/http-helper';
 
-test('Mime exported items', (t) => {
-    t.snapshot(Mime);
+test('Mime exported items', () => {
+    expect(Mime).toMatchSnapshot();
 });

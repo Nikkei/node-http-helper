@@ -1,31 +1,20 @@
-import test from 'ava';
+import { test, expect, describe } from 'vitest';
 import type { Nullable } from 'option-t/Nullable/Nullable';
 import { serializeDirective } from '@nikkei/http-helper/csp';
 
-test('serializeDirective: should throw if string to 2nd argument directly', (t) => {
+describe('serializeDirective: should throw if string to 2nd argument directly', () => {
     const NAME = 'test-directive';
+    test('typeof === "string" should throw', () => {
+        expect(() => serializeDirective(NAME, 'blahblah')).toThrowError(
+            new TypeError(`For ${NAME} construction, sources must not be string.`),
+        );
+    });
 
-    t.throws(
-        () => {
-            serializeDirective(NAME, 'blahblah');
-        },
-        {
-            instanceOf: TypeError,
-            message: `For ${NAME} construction, sources must not be string.`,
-        },
-        'typeof === "string" should throw',
-    );
-
-    t.throws(
-        () => {
-            serializeDirective(NAME, new String('blahblah'));
-        },
-        {
-            instanceOf: TypeError,
-            message: `For ${NAME} construction, sources must not be string.`,
-        },
-        '`instanceof String` should throw',
-    );
+    test('`instanceof String` should throw', () => {
+        expect(() => serializeDirective(NAME, new String('blahblah'))).toThrowError(
+            new TypeError(`For ${NAME} construction, sources must not be string.`),
+        );
+    });
 });
 
 {
@@ -38,9 +27,9 @@ test('serializeDirective: should throw if string to 2nd argument directly', (t) 
         ['some values containing null', ['1', null, '2', null, '3'], `${NAME} 1 2 3`],
     ];
     for (const [title, input, expected] of testcaseList) {
-        test(`serializeDirective: ${title}`, (t) => {
+        test(`serializeDirective: ${title}`, () => {
             const actual = serializeDirective(NAME, input);
-            t.is(actual as string, expected);
+            expect(actual).toStrictEqual(expected);
         });
     }
 }
