@@ -21,7 +21,7 @@ jobs:
             id-token: write
 
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
               shell: bash
