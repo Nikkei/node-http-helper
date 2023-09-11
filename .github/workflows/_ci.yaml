@@ -15,7 +15,7 @@ jobs:
     unittest:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
             - run: npm run test:run_only
@@ -23,13 +23,13 @@ jobs:
     lint:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
             - uses: ./.github/actions/prepare_ci
             - run: npm run lint
 
     check_format:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
             - uses: ./.github/actions/prepare_ci
             - run: npm run format:check
