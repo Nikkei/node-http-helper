@@ -5,7 +5,7 @@ updates:
     - package-ecosystem: github-actions
       directory: '/'
       schedule:
-          interval: weekly
+          interval: monthly
       open-pull-requests-limit: 99
       labels:
           - 'A-dependency/gardening'
@@ -14,7 +14,7 @@ updates:
     - package-ecosystem: npm
       directory: '/'
       schedule:
-          interval: weekly
+          interval: monthly
       open-pull-requests-limit: 99
       labels:
           - 'A-dependency/gardening'
@@ -37,3 +37,15 @@ updates:
           typescript-eslint:
               patterns:
                   - '@typescript-eslint/*'
+
+    #####################################################
+    #   In-repository composite actions
+    #####################################################
+    - package-ecosystem: github-actions
+      directory: '/.github/actions/prepare_ci'
+      schedule:
+          interval: monthly
+      open-pull-requests-limit: 99
+      labels:
+          - 'A-dependency/gardening'
+          - I-enhancement
