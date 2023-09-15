@@ -5,7 +5,7 @@ updates:
     - package-ecosystem: github-actions
       directory: '/'
       schedule:
-          interval: weekly
+          interval: monthly
       open-pull-requests-limit: 99
       labels:
           - 'A-dependency/gardening'
@@ -14,7 +14,7 @@ updates:
     - package-ecosystem: npm
       directory: '/'
       schedule:
-          interval: weekly
+          interval: monthly
       open-pull-requests-limit: 99
       labels:
           - 'A-dependency/gardening'
@@ -44,7 +44,7 @@ updates:
     - package-ecosystem: github-actions
       directory: '/.github/actions/prepare_ci'
       schedule:
-          interval: weekly
+          interval: monthly
       open-pull-requests-limit: 99
       labels:
           - 'A-dependency/gardening'
