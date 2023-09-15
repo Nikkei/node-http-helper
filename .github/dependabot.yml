@@ -37,3 +37,15 @@ updates:
           typescript-eslint:
               patterns:
                   - '@typescript-eslint/*'
+
+    #####################################################
+    #   In-repository composite actions
+    #####################################################
+    - package-ecosystem: github-actions
+      directory: '/.github/actions/prepare_ci'
+      schedule:
+          interval: weekly
+      open-pull-requests-limit: 99
+      labels:
+          - 'A-dependency/gardening'
+          - I-enhancement
