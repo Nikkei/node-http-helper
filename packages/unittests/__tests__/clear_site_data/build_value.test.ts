@@ -1,22 +1,16 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { ClearSiteData } from '@nikkei/http-helper';
 
-test('buildValue()', (t) => {
+test('buildValue()', () => {
     const result = ClearSiteData.buildValue(ClearSiteData.CACHE, ClearSiteData.COOKIES);
-    t.is(result, '"cache", "cookies"');
+    expect(result).toBe('"cache", "cookies"');
 });
 
-test('buildValue() without any arguments', (t) => {
-    t.throws(
-        () => {
-            ClearSiteData.buildValue();
-        },
-        {
-            instanceOf: RangeError,
-            message: 'items are empty. Please specify some values',
-        },
-    );
+test('buildValue() without any arguments', () => {
+    expect(() => {
+        ClearSiteData.buildValue();
+    }).toThrowError(new RangeError('items are empty. Please specify some values'));
 });
 
 const PATTERN_LIST = [
@@ -29,20 +23,14 @@ const PATTERN_LIST = [
 ];
 
 for (const pattern of PATTERN_LIST) {
-    test(`buildValue() passed multiple argumens, parren ${pattern.join(', ')}`, (t) => {
-        t.throws(
-            () => {
-                ClearSiteData.buildValue(...pattern);
-            },
-            {
-                instanceOf: RangeError,
-                message: `directives contains \`${ClearSiteData.WILDCARD}\`. Please use only it.`,
-            },
-        );
+    test(`buildValue() passed multiple argumens, parren ${pattern.join(', ')}`, () => {
+        expect(() => {
+            ClearSiteData.buildValue(...pattern);
+        }).toThrowError(new RangeError(`directives contains \`${ClearSiteData.WILDCARD}\`. Please use only it.`));
     });
 }
 
-test(`builValue() with ${ClearSiteData.WILDCARD}`, (t) => {
+test(`builValue() with ${ClearSiteData.WILDCARD}`, () => {
     const actual = ClearSiteData.buildValue(ClearSiteData.WILDCARD);
-    t.is(actual, '"*"');
+    expect(actual).toBe('"*"');
 });

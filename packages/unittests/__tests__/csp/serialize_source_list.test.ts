@@ -1,4 +1,4 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 import type { Nullable } from 'option-t/Nullable/Nullable';
 import { serializeSourceList } from '@nikkei/http-helper/csp';
 
@@ -11,9 +11,9 @@ import { serializeSourceList } from '@nikkei/http-helper/csp';
         ['Iterable containg some values', ['1', null, '2', null, '3'].values(), `1 2 3`],
     ];
     for (const [title, input, expected] of testcaseList) {
-        test(`serializeSourceList: ${title}`, (t) => {
+        test(`serializeSourceList: ${title}`, () => {
             const actual = serializeSourceList(input);
-            t.is(actual as string, expected);
+            expect(actual).toStrictEqual(expected);
         });
     }
 }

@@ -1,7 +1,7 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { HttpStatus } from '@nikkei/http-helper';
 
-test('HttpStatus exported items', (t) => {
-    t.snapshot(HttpStatus);
+test('HttpStatus exported items', () => {
+    expect(HttpStatus).toMatchSnapshot();
 });

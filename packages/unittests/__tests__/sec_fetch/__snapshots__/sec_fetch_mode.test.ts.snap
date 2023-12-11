@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SecFetchMode exported items 1`] = `
+{
+  "CORS": "cors",
+  "NAVIGATE": "navigate",
+  "NO_CORS": "no-cors",
+  "SAME_ORIGIN": "same-origin",
+  "WEBSOCKET": "websocket",
+}
+`;

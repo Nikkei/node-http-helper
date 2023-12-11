@@ -1,15 +1,15 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { RequestDirective, ResponseDirective, Value } from '@nikkei/http-helper/cache';
 
-test('RequestDirective entries', (t) => {
-    t.snapshot(RequestDirective);
+test('RequestDirective entries', () => {
+    expect(RequestDirective).toMatchSnapshot();
 });
 
-test('ResponseDirective entries', (t) => {
-    t.snapshot(ResponseDirective);
+test('ResponseDirective entries', () => {
+    expect(ResponseDirective).toMatchSnapshot();
 });
 
-test('Value entries', (t) => {
-    t.snapshot(Value);
+test('Value entries', () => {
+    expect(Value).toMatchSnapshot();
 });

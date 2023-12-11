@@ -1,42 +1,32 @@
-import test from 'ava';
+import { test, expect } from 'vitest';
 
 import { Value } from '@nikkei/http-helper/cache';
 
 const maxStale = Value.maxStale;
 
-test('valid case', (t) => {
+test('valid case', () => {
     const input = 1215641321231;
     const actual = maxStale(input);
-    t.is(actual, `max-stale=1215641321231`);
+    expect(actual).toBe(`max-stale=1215641321231`);
 });
 
-test('pass float', (t) => {
+test('pass float', () => {
     const input = 3.1415;
 
-    t.throws(
-        () => {
-            maxStale(input);
-        },
-        {
-            instanceOf: TypeError,
-        },
-    );
+    expect(() => {
+        maxStale(input);
+    }).toThrowError(TypeError);
 });
 
-test('pass negative number', (t) => {
+test('pass negative number', () => {
     const input = -1;
 
-    t.throws(
-        () => {
-            maxStale(input);
-        },
-        {
-            instanceOf: RangeError,
-        },
-    );
+    expect(() => {
+        maxStale(input);
+    }).toThrowError(RangeError);
 });
 
-test('pass 0 as the argument', (t) => {
+test('pass 0 as the argument', () => {
     const actual = maxStale(0);
-    t.is(actual, `max-stale=0`);
+    expect(actual).toBe(`max-stale=0`);
 });

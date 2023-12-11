@@ -1,0 +1,43 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RequestDirective entries 1`] = `
+{
+  "MAX_AGE": "max-age",
+  "MAX_STALE": "max-stale",
+  "MIN_FRESH": "min-fresh",
+  "NO_CACHE": "no-cache",
+  "NO_STORE": "no-store",
+  "NO_TRANSFORM": "no-transform",
+  "ONLY_IF_CACHED": "only-if-cached",
+  "STALE_IF_ERROR": "stale-if-error",
+}
+`;
+
+exports[`ResponseDirective entries 1`] = `
+{
+  "IMMUTABLE": "immutable",
+  "MAX_AGE": "max-age",
+  "MUST_REVALIDATE": "must-revalidate",
+  "MUST_UNDERSTAND": "must-understand",
+  "NO_CACHE": "no-cache",
+  "NO_STORE": "no-store",
+  "NO_TRANSFORM": "no-transform",
+  "PRIVATE": "private",
+  "PROXY_REVALIDATE": "proxy-revalidate",
+  "PUBLIC": "public",
+  "STALE_IF_ERROR": "stale-if-error",
+  "STALE_WHILE_REVALIDATE": "stale-while-revalidate",
+  "S_MAXAGE": "s-maxage",
+}
+`;
+
+exports[`Value entries 1`] = `
+{
+  "maxAge": [Function],
+  "maxStale": [Function],
+  "minFresh": [Function],
+  "sMaxAge": [Function],
+  "staleIfError": [Function],
+  "staleWhileRevalidate": [Function],
+}
+`;
