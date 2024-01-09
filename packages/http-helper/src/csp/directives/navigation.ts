@@ -16,7 +16,3 @@ export type FormActionDirective = SerializedDirective<typeof DIRECTIVE_FORM_ACTI
  */
 export const DIRECTIVE_FRAME_ANCESTORS = 'frame-ancestors';
 export type FrameAncestorsDirective = SerializedDirective<typeof DIRECTIVE_FRAME_ANCESTORS>;
-
-// https://w3c.github.io/webappsec-csp/#directive-navigate-to
-// We think there is no implementation of this directive by MDN
-// https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/navigate-to
