@@ -2,14 +2,14 @@
     "extends": "../../tsconfig.base.project_reference.json",
     "compilerOptions": {
         "outDir": "./__dist",
-        "rootDir": "./src"
+        "rootDir": "./src",
     },
     "include": [
         // @prettier-ignore
-        "src/**/*"
+        "src/**/*",
     ],
     "exclude": [
         // @prettier-ignore
-        "**/**/*.test.*"
-    ]
+        "**/**/*.test.*",
+    ],
 }

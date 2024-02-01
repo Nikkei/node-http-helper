@@ -2,12 +2,12 @@
     "extends": "../../tsconfig.base.project_reference.json",
     "compilerOptions": {
         "noEmit": true,
-        "outDir": "./__obj"
+        "outDir": "./__obj",
     },
     "include": ["**/**/*"],
     "references": [
         {
-            "path": "../http-helper"
-        }
-    ]
+            "path": "../http-helper",
+        },
+    ],
 }
