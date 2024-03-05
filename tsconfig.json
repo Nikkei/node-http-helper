@@ -1,15 +1,15 @@
 {
     "extends": "./tsconfig.base.json",
     "compilerOptions": {
-        "noEmit": true,
+        "noEmit": true
     },
     "exclude": ["./packages/**/*"],
     "references": [
         {
-            "path": "./packages/http-helper",
+            "path": "./packages/http-helper"
         },
         {
-            "path": "./packages/unittests",
-        },
-    ],
+            "path": "./packages/unittests"
+        }
+    ]
 }
