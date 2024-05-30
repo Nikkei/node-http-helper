@@ -1,4 +1,4 @@
-import { isNotNull, type Nullable } from 'option-t/Nullable/Nullable';
+import { isNotNull, type Nullable } from 'option-t/nullable/nullable';
 
 // https://w3c.github.io/webappsec-csp/#grammardef-serialized-policy
 export function serializePolicy(...values: Array<Nullable<string>>) {
