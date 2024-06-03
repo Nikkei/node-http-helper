@@ -1,4 +1,4 @@
-import { type Nullable, isNotNull } from 'option-t/Nullable/Nullable';
+import { type Nullable, isNotNull } from 'option-t/nullable/nullable';
 
 /**
  *  https://w3c.github.io/webappsec-csp/#grammardef-serialized-source-list
