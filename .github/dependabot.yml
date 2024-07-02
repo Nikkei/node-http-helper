@@ -28,6 +28,12 @@ updates:
           # This make to stop the automatic flow for it.
           - dependency-name: typescript
             update-types: ['version-update:semver-major', 'version-update:semver-minor']
+          # FIXME: https://github.com/Nikkei/node-http-helper/issues/300
+          - dependency-name: eslint
+            update-types: ['version-update:semver-major']
+          # FIXME: https://github.com/Nikkei/node-http-helper/issues/300
+          - dependency-name: '@eslint/js'
+            update-types: ['version-update:semver-major']
       # - https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file#groups
       groups:
           eslint:
