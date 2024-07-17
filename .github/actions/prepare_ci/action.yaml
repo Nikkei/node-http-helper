@@ -6,7 +6,7 @@ runs:
     steps:
         - uses: actions/setup-node@v4
           with:
-              node-version: 18
+              node-version: 22
               cache: 'npm'
 
         # - https://nodejs.org/docs/latest-v19.x/api/corepack.html
