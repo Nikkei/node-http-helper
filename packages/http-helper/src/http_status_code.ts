@@ -276,3 +276,73 @@ export const HTTP_VERSION_NOT_SUPPORTED_505 = 505;
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511
  */
 export const NETWORK_AUTHENTICATION_REQUIRED_511 = 511;
+
+/**
+ * @param code
+ *  The http status code.
+ * @returns
+ *  This will be `true` if the _code_ is in the range of [1xx][1xx].
+ *  Otherwise, return `false`.
+ *
+ *  [1xx]: https://httpwg.org/specs/rfc9110.html#status.1xx
+ */
+export function isInformational1xx(code: number): boolean {
+    const ok = 100 <= code && code < 200;
+    return ok;
+}
+
+/**
+ * @param code
+ *  The http status code.
+ * @returns
+ *  This will be `true` if the _code_ is in the range of [2xx][2xx].
+ *  Otherwise, return `false`.
+ *
+ *  [2xx]: https://httpwg.org/specs/rfc9110.html#status.2xx
+ */
+export function isSuccessful2xx(code: number): boolean {
+    const ok = 200 <= code && code < 300;
+    return ok;
+}
+
+/**
+ * @param code
+ *  The http status code.
+ * @returns
+ *  This will be `true` if the _code_ is in the range of [3xx][3xx].
+ *  Otherwise, return `false`.
+ *
+ *  [3xx]: https://httpwg.org/specs/rfc9110.html#status.3xx
+ */
+export function isRedirection3xx(code: number): boolean {
+    const ok = 300 <= code && code < 400;
+    return ok;
+}
+
+/**
+ * @param code
+ *  The http status code.
+ * @returns
+ *  This will be `true` if the _code_ is in the range of [4xx][4xx].
+ *  Otherwise, return `false`.
+ *
+ *  [4xx]: https://httpwg.org/specs/rfc9110.html#status.4xx
+ */
+export function isClientError4xx(code: number): boolean {
+    const ok = 400 <= code && code < 500;
+    return ok;
+}
+
+/**
+ * @param code
+ *  The http status code.
+ * @returns
+ *  This will be `true` if the _code_ is in the range of [5xx][5xx].
+ *  Otherwise, return `false`.
+ *
+ *  [5xx]: https://httpwg.org/specs/rfc9110.html#status.5xx
+ */
+export function isServerError5xx(code: number): boolean {
+    const ok = 500 <= code && code < 600;
+    return ok;
+}

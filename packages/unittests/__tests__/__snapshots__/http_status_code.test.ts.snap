@@ -50,5 +50,10 @@ exports[`HttpStatus exported items 1`] = `
   "UPGRADE_REQUIRED_426": 426,
   "URI_TOO_LONG_414": 414,
   "USE_PROXY_305": 305,
+  "isClientError4xx": [Function],
+  "isInformational1xx": [Function],
+  "isRedirection3xx": [Function],
+  "isServerError5xx": [Function],
+  "isSuccessful2xx": [Function],
 }
 `;
