@@ -1,4 +1,4 @@
-import type { Nullable } from 'option-t/nullable/nullable';
+import type { Nullable } from '../../internals/nullable.js';
 import { serializeSourceList } from '../source_list.js';
 
 /**
