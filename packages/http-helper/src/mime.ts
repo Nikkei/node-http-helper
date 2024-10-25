@@ -52,3 +52,8 @@ export const TEXT_HTML_UTF_8 = `${TEXT_HTML}; ${CHARSET_UTF_8}` as const;
 
 export const TEXT_PLAIN = 'text/plain';
 export const TEXT_PLAIN_UTF_8 = `${TEXT_PLAIN}; ${CHARSET_UTF_8}` as const;
+
+/**
+ *  - https://www.iana.org/assignments/media-types/text/xml
+ */
+export const TEXT_XML = 'text/xml';

@@ -13,5 +13,6 @@ exports[`Mime exported items 1`] = `
   "TEXT_JAVASCRIPT": "text/javascript",
   "TEXT_PLAIN": "text/plain",
   "TEXT_PLAIN_UTF_8": "text/plain; charset=utf-8",
+  "TEXT_XML": "text/xml",
 }
 `;
