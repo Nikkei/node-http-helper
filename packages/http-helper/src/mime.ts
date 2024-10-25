@@ -16,6 +16,11 @@ const CHARSET_UTF_8 = 'charset=utf-8';
 export const APPLICATION_JSON = 'application/json';
 
 /**
+ *  - https://www.iana.org/assignments/media-types/application/pdf
+ */
+export const APPLICATION_PDF = 'application/pdf';
+
+/**
  *  - https://www.iana.org/assignments/media-types/application/x-www-form-urlencoded
  *  - https://url.spec.whatwg.org/#application/x-www-form-urlencoded
  */
