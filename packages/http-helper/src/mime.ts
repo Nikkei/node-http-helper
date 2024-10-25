@@ -16,6 +16,11 @@ const CHARSET_UTF_8 = 'charset=utf-8';
 export const APPLICATION_JSON = 'application/json';
 
 /**
+ *  - https://www.iana.org/assignments/media-types/application/pdf
+ */
+export const APPLICATION_PDF = 'application/pdf';
+
+/**
  *  - https://www.iana.org/assignments/media-types/application/x-www-form-urlencoded
  *  - https://url.spec.whatwg.org/#application/x-www-form-urlencoded
  */
@@ -33,6 +38,12 @@ export const MULTIPART_FORM_DATA = 'multipart/form-data';
 export const TEXT_CSS = 'text/css';
 
 /**
+ *  - https://www.iana.org/assignments/media-types/text/csv
+ */
+export const TEXT_CSV = 'text/csv';
+export const TEXT_CSV_UTF_8 = `${TEXT_CSV}; ${CHARSET_UTF_8}` as const;
+
+/**
  *  - https://www.iana.org/assignments/media-types/text/javascript
  *  - https://www.rfc-editor.org/rfc/rfc9239.html
  */
@@ -46,3 +57,8 @@ export const TEXT_HTML_UTF_8 = `${TEXT_HTML}; ${CHARSET_UTF_8}` as const;
 
 export const TEXT_PLAIN = 'text/plain';
 export const TEXT_PLAIN_UTF_8 = `${TEXT_PLAIN}; ${CHARSET_UTF_8}` as const;
+
+/**
+ *  - https://www.iana.org/assignments/media-types/text/xml
+ */
+export const TEXT_XML = 'text/xml';
