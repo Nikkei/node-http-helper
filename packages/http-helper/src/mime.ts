@@ -33,6 +33,12 @@ export const MULTIPART_FORM_DATA = 'multipart/form-data';
 export const TEXT_CSS = 'text/css';
 
 /**
+ *  - https://www.iana.org/assignments/media-types/text/csv
+ */
+export const TEXT_CSV = 'text/csv';
+export const TEXT_CSV_UTF_8 = `${TEXT_CSV}; ${CHARSET_UTF_8}` as const;
+
+/**
  *  - https://www.iana.org/assignments/media-types/text/javascript
  *  - https://www.rfc-editor.org/rfc/rfc9239.html
  */
