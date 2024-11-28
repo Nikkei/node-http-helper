@@ -3,13 +3,17 @@
 exports[`Mime exported items 1`] = `
 {
   "APPLICATION_JSON": "application/json",
+  "APPLICATION_PDF": "application/pdf",
   "APPLICATION_WWW_FORM_URLENCODED": "application/x-www-form-urlencoded",
   "MULTIPART_FORM_DATA": "multipart/form-data",
   "TEXT_CSS": "text/css",
+  "TEXT_CSV": "text/csv",
+  "TEXT_CSV_UTF_8": "text/csv; charset=utf-8",
   "TEXT_HTML": "text/html",
   "TEXT_HTML_UTF_8": "text/html; charset=utf-8",
   "TEXT_JAVASCRIPT": "text/javascript",
   "TEXT_PLAIN": "text/plain",
   "TEXT_PLAIN_UTF_8": "text/plain; charset=utf-8",
+  "TEXT_XML": "text/xml",
 }
 `;
