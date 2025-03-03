@@ -9,8 +9,7 @@
         "build": {
             "dependsOn": [
                 // @prettier-ignore
-                "^build",
-                "clean"
+                "^build"
             ],
             "inputs": [
                 // @prettier-ignore
@@ -29,7 +28,6 @@
             "dependsOn": [
                 // @prettier-ignore
                 "build",
-                "clean",
                 // This allows to run this task parallely in actually.
                 "transit"
             ],
