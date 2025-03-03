@@ -9,11 +9,9 @@
         "clean": "turbo run clean",
         "build": "turbo run build",
         "typecheck": "tsc --build",
-        "pretest": "npm run build",
         "lint": "eslint .",
         "lint:fix": "npm run lint -- --fix",
-        "test": "npm run test:run_only",
-        "test:run_only": "turbo run test",
+        "test": "turbo run test",
         "test:run_only_with_update_snapshots": "turbo run test:update_snapshots",
         "format": "prettier . --write",
         "format:check": "prettier . --check"

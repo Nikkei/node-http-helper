@@ -16,10 +16,20 @@
             "cache": false
         },
         "test": {
+            "dependsOn": [
+                // @prettier-ignore
+                "build",
+                "clean"
+            ],
             // We need to think about this...
             "cache": false
         },
         "test:update_snapshots": {
+            "dependsOn": [
+                // @prettier-ignore
+                "build",
+                "clean"
+            ],
             // We need to think about this...
             "cache": false
         }
