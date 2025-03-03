@@ -1,0 +1,10 @@
+// https://turbo.build/repo/docs/reference/configuration
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {},
+    "globalEnv": [],
+    "globalPassThroughEnv": [
+        // This value does not change the final artifact since not embedded.
+        "NPM_TOKEN"
+    ]
+}

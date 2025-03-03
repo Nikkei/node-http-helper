@@ -2,7 +2,8 @@ import js from '@eslint/js';
 import tsESLintPlugin from '@typescript-eslint/eslint-plugin';
 import tsESLintParser from '@typescript-eslint/parser';
 
-import presets from 'eslint-config-prettier';
+import prettierConfig from 'eslint-config-prettier';
+import turboConfig from 'eslint-config-turbo/flat';
 import globals from 'globals';
 
 const ecmaVersion = 2022;
@@ -13,7 +14,7 @@ const tsESLintPresetsESLintRecommendedRules = tsESLintPlugin.configs['eslint-rec
 const tsESLintPresetsRecommendedRules = tsESLintPlugin.configs.recommended.rules;
 
 const prettierRules = Object.freeze({
-    ...presets.rules,
+    ...prettierConfig.rules,
 
     // This rule avoid the prettier's behavior which omits curly blacket for if statement by default like following:
     //
@@ -52,6 +53,10 @@ export default [
             // Project-specific generated files
             '**/__dist/**/*',
             '**/__obj/**/*',
+
+            // Generated files by turborepo
+            // See https://turbo.build/repo/docs/getting-started/add-to-existing-repository
+            '**/.turbo/**/*',
         ],
     },
     {
@@ -115,4 +120,5 @@ export default [
             '@typescript-eslint/no-import-type-side-effects': 'warn',
         },
     },
+    ...turboConfig,
 ];
