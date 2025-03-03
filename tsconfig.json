@@ -4,6 +4,9 @@
         "noEmit": true
     },
     "exclude": ["./packages/**/*"],
+    // This is required to tell the inner-modules relasionships to tsserver
+    // to seek a item across participate modules on using refactoring features by IDE
+    // event if our task system invokes `tsc` directly in for each of inner-modules.
     "references": [
         {
             "path": "./packages/http-helper"
