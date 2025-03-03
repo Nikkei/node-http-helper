@@ -6,8 +6,7 @@
     "scripts": {
         "clean": "rm -rf __obj/",
         "test": "vitest run",
-        "test:watch": "vitest watch",
-        "test:update_snapshots": "vitest run --update"
+        "test:watch": "vitest watch"
     },
     "dependencies": {
         "@nikkei/http-helper": "*",

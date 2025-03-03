@@ -12,7 +12,7 @@
         "lint": "eslint .",
         "lint:fix": "npm run lint -- --fix",
         "test": "turbo run test",
-        "test:update_snapshots": "turbo run test:update_snapshots",
+        "test:update_snapshots": "turbo run test -- --update",
         "format": "prettier . --write",
         "format:check": "prettier . --check"
     },

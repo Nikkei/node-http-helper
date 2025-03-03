@@ -32,24 +32,6 @@
                 // inline snapshots changes themselves. Let's treat the input as the ouput.
                 "__tests__/**"
             ]
-        },
-        "test:update_snapshots": {
-            "dependsOn": [
-                // @prettier-ignore
-                "build",
-                "clean"
-            ],
-            "inputs": [
-                // @prettier-ignore
-                "__tests__/**",
-                "vitest.config.ts"
-            ],
-            "outputs": [
-                // @prettier-ignore
-
-                // inline snapshots changes themselves. Let's treat the input as the ouput.
-                "__tests__/**"
-            ]
         }
     },
     "globalEnv": [],
