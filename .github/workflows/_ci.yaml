@@ -12,6 +12,13 @@ permissions:
 # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
 # https://docs.github.com/en/actions/learn-github-actions/contexts
 jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: ./.github/actions/prepare_ci
+            - run: npm run build
+
     unittest:
         runs-on: ubuntu-latest
         steps:
@@ -35,6 +42,7 @@ jobs:
 
     sentinel:
         needs:
+            - build
             - unittest
             - lint
             - check_format
