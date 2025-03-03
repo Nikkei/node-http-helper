@@ -7,8 +7,7 @@
     ],
     "scripts": {
         "clean": "turbo run clean",
-        "prebuild": "npm run clean",
-        "build": "tsc --build",
+        "build": "turbo run build",
         "typecheck": "tsc --build",
         "pretest": "npm run build",
         "lint": "eslint .",

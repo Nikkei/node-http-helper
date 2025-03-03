@@ -6,6 +6,15 @@
             // This task should ignore cache.
             "cache": false
         },
+        "build": {
+            "dependsOn": [
+                // @prettier-ignore
+                "^build",
+                "clean"
+            ],
+            // We need to think about this...
+            "cache": false
+        },
         "test": {
             // We need to think about this...
             "cache": false
