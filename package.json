@@ -6,7 +6,7 @@
         "packages/*"
     ],
     "scripts": {
-        "clean": "npm run clean --workspaces",
+        "clean": "turbo run clean",
         "prebuild": "npm run clean",
         "build": "tsc --build",
         "typecheck": "tsc --build",
