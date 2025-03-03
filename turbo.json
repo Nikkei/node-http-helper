@@ -5,6 +5,14 @@
         "clean": {
             // This task should ignore cache.
             "cache": false
+        },
+        "test": {
+            // We need to think about this...
+            "cache": false
+        },
+        "test:update_snapshots": {
+            // We need to think about this...
+            "cache": false
         }
     },
     "globalEnv": [],

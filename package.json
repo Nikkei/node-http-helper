@@ -14,8 +14,8 @@
         "lint": "eslint .",
         "lint:fix": "npm run lint -- --fix",
         "test": "npm run test:run_only",
-        "test:run_only": "npm run test --workspace=packages/unittests",
-        "test:run_only_with_update_snapshots": "npm run test:update_snapshots --workspace=packages/unittests",
+        "test:run_only": "turbo run test",
+        "test:run_only_with_update_snapshots": "turbo run test:update_snapshots",
         "format": "prettier . --write",
         "format:check": "prettier . --check"
     },
