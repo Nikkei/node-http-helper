@@ -12,8 +12,18 @@
                 "^build",
                 "clean"
             ],
-            // We need to think about this...
-            "cache": false
+            "inputs": [
+                // @prettier-ignore
+                "src/**",
+                "package.json",
+                "tsconfig.json",
+                "tsconfig.tsbuildinfo"
+            ],
+            "outputs": [
+                // @prettier-ignore
+                "__dist/**",
+                "tsconfig.tsbuildinfo"
+            ]
         },
         "test": {
             "dependsOn": [
@@ -24,6 +34,8 @@
             "inputs": [
                 // @prettier-ignore
                 "__tests__/**",
+                "package.json",
+                "tsconfig.json",
                 "vitest.config.ts"
             ],
             "outputs": [
