@@ -2,3 +2,7 @@
 package-lock.json
 **/__dist/**/*.*
 **/__obj/**/*.*
+
+# Generated files by turborepo
+# See https://turbo.build/repo/docs/getting-started/add-to-existing-repository
+.turbo/**/*

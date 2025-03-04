@@ -1,0 +1,74 @@
+// https://turbo.build/repo/docs/reference/configuration
+{
+    "$schema": "https://turbo.build/schema.json",
+    "tasks": {
+        "clean": {
+            // This task should ignore cache.
+            "cache": false
+        },
+        "build": {
+            "dependsOn": [
+                // @prettier-ignore
+                "^build"
+            ],
+            "inputs": [
+                // @prettier-ignore
+                "src/**",
+                "package.json",
+                "tsconfig.json",
+                "tsconfig.tsbuildinfo"
+            ],
+            "outputs": [
+                // @prettier-ignore
+                "__dist/**",
+                "tsconfig.tsbuildinfo"
+            ]
+        },
+        "test": {
+            "dependsOn": [
+                // @prettier-ignore
+                "build",
+                // This allows to run this task parallely in actually.
+                "transit"
+            ],
+            "inputs": [
+                // @prettier-ignore
+                "__tests__/**",
+                "package.json",
+                "tsconfig.json",
+                "vitest.config.ts"
+            ],
+            "outputs": [
+                // @prettier-ignore
+
+                // inline snapshots changes themselves. Let's treat the input as the ouput.
+                "__tests__/**"
+            ]
+        },
+        // This is an empty task to tell the workspace dependency graph to turborepo.
+        // This task name __must not__ be present in any workspaces.
+        //
+        // As the result, when we invoke `turbo <some_downstream_task_depends_on_this>`,
+        //
+        // 1. Run _transit_ tasks _by the order of dependecy graph_.
+        //    But it does nothing. So it's super fast ended.
+        //      - Importantly, _transit_ taints a downstream workspaces dirty
+        //        if the upstream dependecy is dirty (cache-miss).
+        // 2. Run _<some_downstream_task_depends_on_this>_ tasks.
+        //    But if this task is marked as dirty in step 1,
+        //   _<some_downstream_task_depends_on_this>_ task also marked as dirty and run it.
+        //      - This can run parallely _actually_ because _transit_ is super cheap!
+        //
+        // See:
+        //  - https://turbo.build/repo/docs/crafting-your-repository/configuring-tasks#dependent-tasks-that-can-be-ran-in-parallel
+        //  - https://turbo.build/repo/docs/core-concepts/package-and-task-graph#transit-nodes
+        "transit": {
+            "dependsOn": ["^transit"]
+        }
+    },
+    "globalEnv": [],
+    "globalPassThroughEnv": [
+        // This value does not change the final artifact since not embedded.
+        "NPM_TOKEN"
+    ]
+}

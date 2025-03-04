@@ -32,10 +32,9 @@
         }
     },
     "scripts": {
-        "clean": "npm run clean:dist && npm run clean:tsbuildinfo",
+        "clean": "node --run clean:dist && node --run clean:tsbuildinfo",
         "clean:dist": "rm -rf __dist/",
         "clean:tsbuildinfo": "rm -rf tsconfig.tsbuildinfo",
-        "prebuild": "npm run clean",
         "build": "tsc --project ."
     },
     "repository": {

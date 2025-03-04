@@ -39,3 +39,8 @@ updates:
           typescript-eslint:
               patterns:
                   - '@typescript-eslint/*'
+          turborepo:
+              patterns:
+                  # These packages will be updated on the same time almostly.
+                  - turbo
+                  - eslint-config-turbo

@@ -4,10 +4,9 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "clean": "rm -rf __obj/",
-        "test": "vitest run",
-        "test:watch": "vitest watch",
-        "test:update_snapshots": "vitest run --update"
+        "clean": "rm -rf __dist/",
+        "build": "tsc --project .",
+        "test": "vitest run"
     },
     "dependencies": {
         "@nikkei/http-helper": "*",

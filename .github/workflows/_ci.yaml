@@ -12,15 +12,33 @@ permissions:
 # https://docs.github.com/en/actions/learn-github-actions/environment-variables#default-environment-variables
 # https://docs.github.com/en/actions/learn-github-actions/contexts
 jobs:
-    unittest:
+    warmup_dependencies_cache:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: ./.github/actions/prepare_ci
+
+    build:
+        needs:
+            - warmup_dependencies_cache
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
             - uses: ./.github/actions/prepare_ci
             - run: npm run build
-            - run: npm run test:run_only
+
+    unittest:
+        needs:
+            - warmup_dependencies_cache
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+            - uses: ./.github/actions/prepare_ci
+            - run: npm run test
 
     lint:
+        needs:
+            - warmup_dependencies_cache
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -28,6 +46,8 @@ jobs:
             - run: npm run lint
 
     check_format:
+        needs:
+            - warmup_dependencies_cache
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v4
@@ -36,6 +56,7 @@ jobs:
 
     sentinel:
         needs:
+            - build
             - unittest
             - lint
             - check_format

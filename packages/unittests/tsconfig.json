@@ -3,7 +3,7 @@
     "compilerOptions": {
         "lib": ["ESNext"],
         "noEmit": true,
-        "outDir": "./__obj"
+        "outDir": "./__dist"
     },
     "include": ["**/**/*"],
     "references": [
