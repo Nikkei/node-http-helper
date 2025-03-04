@@ -13,7 +13,11 @@ runs:
         # - https://nodejs.org/docs/latest-v19.x/api/corepack.html
         - name: Enable corepack
           shell: bash
-          run: corepack enable
+          # See https://github.com/nodejs/corepack/issues/616
+          # We install the latest corepack to avoid an installation problem.
+          run: |
+              npm install -g corepack@latest
+              corepack enable
 
         - name: Install dependencies
           shell: bash
