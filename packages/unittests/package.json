@@ -11,6 +11,6 @@
     "dependencies": {
         "@nikkei/http-helper": "*",
         "option-t": "^53.0.0",
-        "vitest": "^3.1.1"
+        "vitest": "^3.1.2"
     }
 }
