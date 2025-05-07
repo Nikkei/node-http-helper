@@ -5,3 +5,9 @@ singleQuote = true
 tabWidth = 4
 useTabs = false
 printWidth = 120
+
+[[overrides]]
+files = "turbo.jsonc"
+[overrides.options]
+# Turborepo 2.5 does not support trailingComma even if in jsonc file.
+trailingComma = "none"
