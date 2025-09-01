@@ -10,7 +10,7 @@
     },
     "dependencies": {
         "@nikkei/http-helper": "*",
-        "option-t": "^53.0.0",
+        "option-t": "^54.2.3",
         "vitest": "^3.2.4"
     }
 }
