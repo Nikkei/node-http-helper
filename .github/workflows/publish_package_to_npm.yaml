@@ -4,6 +4,7 @@ on:
         types: [released]
 
 permissions:
+    id-token: write # Required for OIDC
     contents: read
 
 jobs:
@@ -27,5 +28,3 @@ jobs:
               shell: bash
             - run: npm publish --workspace=packages/http-helper --access=public --provenance
               shell: bash
-              env:
-                  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
