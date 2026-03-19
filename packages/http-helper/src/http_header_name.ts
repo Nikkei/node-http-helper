@@ -307,6 +307,11 @@ export const MAX_FORWARDS = 'max-forwards';
 export const ORIGIN = 'origin';
 
 /**
+ *  - https://developer.chrome.com/docs/web-platform/origin-trials
+ */
+export const ORIGIN_TRIAL = 'origin-trial';
+
+/**
  *  - https://www.rfc-editor.org/rfc/rfc9110.html#name-proxy-authenticate
  *  - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Proxy-Authenticate
  */
