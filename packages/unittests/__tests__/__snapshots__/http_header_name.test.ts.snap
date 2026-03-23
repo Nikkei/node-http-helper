@@ -53,6 +53,7 @@ exports[`HttpHeaderName exported items 1`] = `
   "LOCATION": "location",
   "MAX_FORWARDS": "max-forwards",
   "ORIGIN": "origin",
+  "ORIGIN_TRIAL": "origin-trial",
   "PROXY_AUTHENTICATE": "proxy-authenticate",
   "PROXY_AUTHENTICATION_INFO": "proxy-authentication-info",
   "PROXY_AUTHORIZATION": "proxy-authorization",
