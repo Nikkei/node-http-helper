@@ -20,7 +20,7 @@
         "@eslint/js": "^10.0.1",
         "@typescript-eslint/eslint-plugin": "^8.56.1",
         "@typescript-eslint/parser": "^8.31.1",
-        "eslint": "^10.0.2",
+        "eslint": "^10.1.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-config-turbo": "^2.9.3",
         "globals": "^17.4.0",
