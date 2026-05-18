@@ -24,7 +24,7 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
             - uses: ./.github/actions/prepare_ci
-            - run: npm run build
+            - run: pnpm run build
               shell: bash
-            - run: npm publish --workspace=packages/http-helper --access=public --provenance
+            - run: pnpm publish --filter @nikkei/http-helper --access=public --provenance --no-git-checks
               shell: bash

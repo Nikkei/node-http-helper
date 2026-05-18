@@ -1,0 +1,40 @@
+# See https://pnpm.io/pnpm-workspace_yaml
+
+packages:
+    - 'packages/*'
+
+# Lifecycle script controls
+onlyBuiltDependencies: []
+neverBuiltDependencies: []
+ignoreScripts: true
+enablePrePostScripts: false
+dangerouslyAllowAllBuilds: false
+
+# Supply-chain controls
+minimumReleaseAge: 10080 # 7 days
+minimumReleaseAgeExclude: []
+auditConfig:
+    ignoreCves: []
+    ignoreGhsas: []
+verifyStoreIntegrity: true
+
+# Lockfile / dependency resolution
+verifyDepsBeforeRun: error
+preferFrozenLockfile: true
+strictPeerDependencies: true
+autoInstallPeers: false
+resolutionMode: highest
+
+# Module isolation
+nodeLinker: isolated
+hoist: false
+shamefullyHoist: false
+publicHoistPattern: []
+
+# Tooling / network
+packageManagerStrict: true
+packageManagerStrictVersion: true
+engineStrict: true
+strictSsl: true
+updateNotifier: false
+auditLevel: low

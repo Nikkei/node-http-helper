@@ -9,7 +9,7 @@
         "test": "vitest run"
     },
     "dependencies": {
-        "@nikkei/http-helper": "*",
+        "@nikkei/http-helper": "workspace:*",
         "option-t": "^56.0.0",
         "vitest": "^4.1.2"
     }

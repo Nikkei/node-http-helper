@@ -25,7 +25,7 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
             - uses: ./.github/actions/prepare_ci
-            - run: npm run build
+            - run: pnpm run build
 
     unittest:
         needs:
@@ -34,7 +34,7 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
             - uses: ./.github/actions/prepare_ci
-            - run: npm run test
+            - run: pnpm run test
 
     lint:
         needs:
@@ -43,7 +43,7 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
             - uses: ./.github/actions/prepare_ci
-            - run: npm run lint
+            - run: pnpm run lint
 
     check_format:
         needs:
@@ -52,7 +52,7 @@ jobs:
         steps:
             - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
             - uses: ./.github/actions/prepare_ci
-            - run: npm run format:check
+            - run: pnpm run format:check
 
     sentinel:
         needs:

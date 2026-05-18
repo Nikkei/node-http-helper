@@ -2,15 +2,12 @@
     "name": "@nikkei/http-helper-monorepo",
     "private": true,
     "type": "module",
-    "workspaces": [
-        "packages/*"
-    ],
     "scripts": {
         "clean": "turbo run clean",
         "build": "turbo run build",
         "typecheck": "tsc --build",
         "lint": "eslint .",
-        "lint:fix": "npm run lint -- --fix",
+        "lint:fix": "pnpm run lint --fix",
         "test": "turbo run test",
         "test:update_snapshots": "turbo run test -- --update",
         "format": "prettier . --write",
@@ -28,5 +25,9 @@
         "turbo": "^2.9.7",
         "typescript": "^5.7.3"
     },
-    "packageManager": "npm@11.1.0+sha512.acf301ad9b9ddba948fcb72341e2f0fcae477f56a95cc2a092934d133a7461062633cefbf93d5934a3dc0768674e2edee9f04dcfcc4bb4c327ff0e3a7d552a1b"
+    "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
+    "engines": {
+        "node": ">=24",
+        "pnpm": ">=11"
+    }
 }
