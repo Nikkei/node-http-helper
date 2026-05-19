@@ -15,15 +15,15 @@
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
-        "@typescript-eslint/eslint-plugin": "^8.58.0",
-        "@typescript-eslint/parser": "^8.31.1",
-        "eslint": "^10.1.0",
+        "@typescript-eslint/eslint-plugin": "^8.59.3",
+        "@typescript-eslint/parser": "^8.59.3",
+        "eslint": "^10.3.0",
         "eslint-config-prettier": "^10.1.8",
-        "eslint-config-turbo": "^2.9.7",
-        "globals": "^17.4.0",
-        "prettier": "^3.8.1",
-        "turbo": "^2.9.7",
-        "typescript": "^5.7.3"
+        "eslint-config-turbo": "^2.9.12",
+        "globals": "^17.6.0",
+        "prettier": "^3.8.3",
+        "turbo": "^2.9.12",
+        "typescript": "^6.0.3"
     },
     "packageManager": "pnpm@11.1.2+sha512.415a1cc25974731e75455c1468371be74c5aa5fb7621b50d4056d222451609f11412f23fd602e6169f1e060466641f798597e1be961a10688836a67b16569499",
     "engines": {
