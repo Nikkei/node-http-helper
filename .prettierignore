@@ -1,5 +1,5 @@
 # Generated files
-package-lock.json
+pnpm-lock.yaml
 **/__dist/**/*.*
 **/__obj/**/*.*
 

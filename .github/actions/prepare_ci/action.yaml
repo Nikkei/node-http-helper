@@ -4,13 +4,6 @@ description: This action prepare CI that restore cachable items
 runs:
     using: composite
     steps:
-        - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
-          with:
-              node-version: 24
-              cache: 'npm'
-
-        # - https://nodejs.org/docs/latest-v19.x/api/corepack.html
-        # - https://nodejs.org/docs/latest-v19.x/api/corepack.html
         - name: Enable corepack
           shell: bash
           # See https://github.com/nodejs/corepack/issues/616
@@ -19,6 +12,11 @@ runs:
               npm install -g corepack@latest
               corepack enable
 
+        - uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
+          with:
+              node-version: 24
+              cache: 'pnpm'
+
         - name: Install dependencies
           shell: bash
-          run: npm ci
+          run: pnpm install --frozen-lockfile --strict-peer-dependencies
