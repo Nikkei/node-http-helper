@@ -42,8 +42,8 @@ importers:
   packages/http-helper:
     dependencies:
       option-t:
-        specifier: ^56.1.1
-        version: 56.1.1
+        specifier: ^56.1.2
+        version: 56.1.2
 
   packages/unittests:
     dependencies:
@@ -51,8 +51,8 @@ importers:
         specifier: workspace:*
         version: link:../http-helper
       option-t:
-        specifier: ^56.1.1
-        version: 56.1.1
+        specifier: ^56.1.2
+        version: 56.1.2
       vitest:
         specifier: ^4.1.6
         version: 4.1.6
@@ -690,8 +690,8 @@ packages:
   obug@2.1.1:
     resolution: {integrity: sha512-uTqF9MuPraAQ+IsnPf366RG4cP9RtUi7MLO1N3KEc+wb0a6yKpeL0lmk2IB1jY5KHPAlTc6T/JRdC/YqxHNwkQ==}
 
-  option-t@56.1.1:
-    resolution: {integrity: sha512-evYmJ2QNc3l2pbCphbiC8UC84YPGvL39TvBK3w9n+5kfEnhxq8Kpf1pvCfAEMymiglqLpvMBIY2taxdoMasbxQ==}
+  option-t@56.1.2:
+    resolution: {integrity: sha512-FEEXXhblMiDmQbXC/mBUT9VTHKt2V7nIWXEgPPsBP8bZXq4w3sejmWGPdZ+zoKL6GzQLRyYUeV6ZQ1zWH8GIUw==}
     engines: {node: '>=24.5.0'}
 
   optionator@0.9.4:
@@ -1477,7 +1477,7 @@ snapshots:
 
   obug@2.1.1: {}
 
-  option-t@56.1.1: {}
+  option-t@56.1.2: {}
 
   optionator@0.9.4:
     dependencies:
