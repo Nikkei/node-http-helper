@@ -15,8 +15,8 @@
     },
     "devDependencies": {
         "@eslint/js": "^10.0.1",
-        "@typescript-eslint/eslint-plugin": "^8.59.3",
-        "@typescript-eslint/parser": "^8.59.3",
+        "@typescript-eslint/eslint-plugin": "^8.65.0",
+        "@typescript-eslint/parser": "^8.65.0",
         "eslint": "^10.3.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-config-turbo": "^2.9.12",
