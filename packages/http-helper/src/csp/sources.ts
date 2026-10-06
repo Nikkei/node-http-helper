@@ -5,12 +5,7 @@ export const SOURCE_NONE = `'none'`;
  *  - https://w3c.github.io/webappsec-csp/#grammardef-source-expression
  */
 export type SourceExpression =
-    | SchemeSource
-    | HostSource
-    | KeywordSource
-    | NonceSource
-    | HashSource
-    | typeof SOURCE_NONE;
+    SchemeSource | HostSource | KeywordSource | NonceSource | HashSource | typeof SOURCE_NONE;
 
 /**
  *  https://w3c.github.io/webappsec-csp/#grammardef-scheme-source
