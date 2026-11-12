@@ -17,11 +17,11 @@
         "@eslint/js": "^10.0.1",
         "@typescript-eslint/eslint-plugin": "^8.70.1",
         "@typescript-eslint/parser": "^8.70.1",
-        "eslint": "^10.9.1",
+        "eslint": "^10.13.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-config-turbo": "^2.9.12",
         "globals": "^17.13.0",
-        "prettier": "^3.9.9",
+        "prettier": "^3.9.10",
         "turbo": "^2.9.14",
         "typescript": "^6.0.3"
     },
